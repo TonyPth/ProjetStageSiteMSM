@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page d'accueil</title>
+        <link rel="stylesheet" href="style.css">
+      
+        <!-- Polices d'écriture -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  seriftext: ['DM Serif Text', 'serif'],
+                  outfit: ['Outfit', 'sans-serif'],
+                  spectral: ['Spectral', 'serif'],
+                  notosans: ['Noto Sans', 'sans-serif'],
+                  audiowide: ['Audiowide', 'sans-serif']
+                }
+              }
+            }
+          }
+        </script>
+      </head>
+  <body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="relative h-screen pb-12 bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/secact6.webp');">
+        <!-- Overlay sombre -->
+        <div class="absolute inset-0 bg-black bg-opacity-35 z-10"></div>
+      
+        <!-- Menu -->
+        <div class="absolute top-0 left-0 w-full z-30">
+          <div class="max-w-6xl mx-auto flex justify-between items-center p-6">
+            <img src="assets/images/logomsm.jpg" alt="Logo MSM" class="h-[120px]">
+            <nav class="space-x-4">
+              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Notre Entreprise</a>
+              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Nos métiers</a>
+              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Nous rejoindre</a>
+              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Contact</a>
+            </nav>
+          </div>
+        </div>
+      
+        <!-- Texte centré dans l'image -->
+        <div class="relative z-20 flex items-center justify-center h-full">
+          <div class="text-center px-4">
+            <h2 class="text-9xl font-seriftext mb-4">MSM Europeinture</h2>
+            <p class="text-lg font-notosans text-xl">Valoriser et protéger vos supports grâce à notre savoir-faire en peinture industrielle.</p>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- Banderole de transition visible dès l'arrivée -->
+      <div class="absolute bottom-0 left-0 w-full bg-red-800 py-2 flex flex-col items-center justify-center z-40">
+        <div class="flex flex-row items-center">
+          <span class="text-white text-xl font-notosans font-semibold tracking-wide">En savoir plus</span>
+          <svg class="ml-2" width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+      </div>
+
+    <!-- Section de bienvenue avec texte et vidéo -->
+<section class="bg-white py-20 z-20">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Colonne texte -->
+      <div>
+        <h3 class="text-6xl font-seriftext text-red-800 mb-4 text-center">Bienvenue</h3>
+        <p class="text-gray-700 text-lg font-notosans leading-relaxed indent-8 mt-6">
+            Depuis plus de 25 ans, MSM Europeinture est un acteur reconnu dans la filière ferroviaire. Spécialisés dans l'application de peinture liquide sur tous types de supports (acier, aluminium, inox, composites) et le traitement de surfaces, nous mettons notre expertise au service de la performance et de la durabilité.
+        </p>
+        <p class="text-gray-700 text-lg font-notosans leading-relaxed indent-8 mt-6">
+            Précurseurs de l'hydrodiluable, nous privilégions une approche respectueuse de l'environnement. Grâce à notre atelier de mécano-soudure, nous concevons également des outillages spécifiques et des solutions de transport adaptées aux secteurs ferroviaire et BTP.
+        </p>
+      </div>
+  
+      <!-- Colonne vidéo -->
+      <div class="aspect-w-16 aspect-h-9">
+        <video 
+          id="video-presentation"
+          class="w-full h-full rounded-xl shadow-lg video-cover"
+          src="assets/videos/video-presentation-msm.mp4"
+          controls
+          muted
+          loop
+          playsinline
+        >
+          Lecture vidéo non supportée
+        </video>
+      </div>
+  
+    </div>
+  </section>
+
+    <!-- Services -->
+    <section class="bg-gray-100 py-20 z-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Nos secteurs d'activité</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Conseil</h4>
+            <p class="text-gray-600">Nous vous accompagnons dans vos projets avec expertise et écoute.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Développement</h4>
+            <p class="text-gray-600">Création de solutions web sur mesure, performantes et modernes.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Formation</h4>
+            <p class="text-gray-600">Des sessions adaptées pour maîtriser les outils numériques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-8">
+      <div class="max-w-6xl mx-auto text-center">
+        <p>© 2025 MSM Europeinture. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

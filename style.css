@@ -1,0 +1,5 @@
+.video-cover {
+    object-fit: cover;
+    object-position: center;
+    background-color: #000;
+  }
