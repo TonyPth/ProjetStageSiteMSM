@@ -32,7 +32,7 @@
   <body class="bg-gray-50 text-gray-800">
 
     <!-- Hero Section -->
-    <section class="relative h-screen pb-12 bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/secact6.webp');">
+    <section class="relative h-screen pb-12 bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/recherche1.webp');">
         <!-- Overlay sombre -->
         <div class="absolute inset-0 bg-black bg-opacity-35 z-10"></div>
       
@@ -59,7 +59,6 @@
         
       </section>
 
-      <!-- Banderole de transition visible dès l'arrivée -->
       <div class="absolute bottom-0 left-0 w-full bg-red-800 py-2 flex flex-col items-center justify-center z-40">
         <div class="flex flex-row items-center">
           <span class="text-white text-xl font-notosans font-semibold tracking-wide">En savoir plus</span>
@@ -100,26 +99,36 @@
     </div>
   </section>
 
-    <!-- Services -->
+    <!-- Secteurs d'activité -->
     <section class="bg-gray-100 py-20 z-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <h3 class="text-3xl font-bold text-center mb-12">Nos secteurs d'activité</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Conseil</h4>
-            <p class="text-gray-600">Nous vous accompagnons dans vos projets avec expertise et écoute.</p>
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
+          <!-- Colonne gauche : Secteurs -->
+          <div>
+            <h3 class="text-6xl font-seriftext text-red-800 mb-4 text-left leading-tight">Nos secteurs d'activité</h3>
+            <ul class="text-2xl font-seriftext text-red-800 mb-2 ml-4 list-disc">
+              <li>Ferroviaire</li>
+              <li>Militaire</li>
+              <li>Bâtiment (charpentes métalliques)</li>
+            </ul>
+            <div class="text-lg font-notosans text-gray-700 mt-2 ml-4">
+              Certification ACQPA<br>
+              <span class="text-base">Niveau 1, Niveau 2, Niveau 3<br>(FROZIO en cours)</span>
+            </div>
           </div>
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Développement</h4>
-            <p class="text-gray-600">Création de solutions web sur mesure, performantes et modernes.</p>
+      
+          <!-- Colonne droite : Texte descriptif -->
+          <div>
+            <p class="text-gray-700 text-lg font-notosans leading-relaxed indent-8 mt-4">
+              Depuis sa création, MSM Europeinture s'engage à faire évoluer son métier avec modernité et exigence. Grâce à une écoute attentive et des prestations compétitives, nous concevons des solutions industrielles fiables, innovantes et durables.
+            </p>
+            <p class="text-gray-700 text-lg font-notosans leading-relaxed indent-8 mt-6">
+              Notre approche responsable privilégie l'utilisation de produits hydrodiluables pour limiter notre impact environnemental. Forts de plus de 25 ans d'expérience dans le ferroviaire, nous mettons aujourd'hui cette expertise au service de nouveaux marchés exigeants.
+            </p>
           </div>
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Formation</h4>
-            <p class="text-gray-600">Des sessions adaptées pour maîtriser les outils numériques.</p>
-          </div>
+      
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Footer -->
     <footer class="bg-red-800 text-white py-8">
