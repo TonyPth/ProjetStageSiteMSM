@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const clone = img.cloneNode(true);
       track.appendChild(clone);
     });
+
+    const lightbox = document.getElementById("lightbox");
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        closeImage();
+      }
+    });
   });
   
   function openImage(src) {

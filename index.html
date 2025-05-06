@@ -73,7 +73,7 @@
       
       <!-- (gauche) texte -->
       <div>
-        <h3 class="text-6xl font-junegull text-red-800 mb-4 text-center">Bienvenue</h3>
+        <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center">Bienvenue</h3>
         <p class="text-gray-700 text-lg font-notosans leading-relaxed indent-8 mt-6">
             Depuis plus de 25 ans, MSM Europeinture est un acteur reconnu dans la filière ferroviaire. Spécialisés dans l'application de peinture liquide sur tous types de supports (acier, aluminium, inox, composites) et le traitement de surfaces, nous mettons notre expertise au service de la performance et de la durabilité.
         </p>
@@ -106,7 +106,7 @@
           
           <!-- (gauche) secteurs -->
           <div>
-            <h3 class="text-6xl font-junegull text-red-800 mb-4 text-left leading-tight">Nos secteurs d'activité</h3>
+            <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center">Nos secteurs d'activité</h3>
             <ul class="text-2xl font-junegull text-red-800 mb-2 ml-4 list-disc">
               <li>Ferroviaire</li>
               <li>Militaire</li>
@@ -135,10 +135,13 @@
       <section class="relative bg-white overflow-hidden py-0">
         <div class="carousel-container">
           <div class="carousel-track" id="carousel-track">
-            <img src="assets/images/secact2.webp" alt="img1" onclick="openImage(this.src)">
-            <img src="assets/images/secact3.webp" alt="img2" onclick="openImage(this.src)">
-            <img src="assets/images/secact4.webp" alt="img3" onclick="openImage(this.src)">
+            <img src="assets/images/secact1.webp" alt="img1" onclick="openImage(this.src)">
+            <img src="assets/images/secact2.webp" alt="img2" onclick="openImage(this.src)">
+            <img src="assets/images/secact3.webp" alt="img3" onclick="openImage(this.src)">
+            <img src="assets/images/secact4.webp" alt="img4" onclick="openImage(this.src)">
             <img src="assets/images/secact5.webp" alt="img4" onclick="openImage(this.src)">
+            <img src="assets/images/secact7.webp" alt="img4" onclick="openImage(this.src)">
+            <img src="assets/images/secact8.webp" alt="img4" onclick="openImage(this.src)">
           </div>
         </div>
       </section>
@@ -148,6 +151,53 @@
         <img id="lightbox-img" class="max-w-full max-h-full rounded shadow-lg" alt="Image agrandie" />
         <span onclick="closeImage()" class="absolute top-4 right-4 text-white text-3xl cursor-pointer">&times;</span>
       </div>
+
+    <!-- métiers -->
+    <section class="bg-white py-20 z-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-6xl font-junegull text-red-800 mb-12 text-center">Nos Métiers</h3>
+        
+        <!-- cartes métiers -->
+        <div class="flex flex-wrap justify-center gap-8">
+          
+          <!-- cartes métiers -->
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">            <img src="assets/images/peinturemetier.webp" alt="Métier 1" class="h-40 w-full object-cover mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Peinture industrielle</h4>
+            <p class="text-gray-700 font-notosans mb-4">Application de peinture liquide sur tous types de surfaces avec exigence qualité et environnementale.</p>
+            <a href="#" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="assets/images/metier2.webp" alt="Métier 2" class="h-40 w-full object-cover rounded-xl mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Prestations in situ</h4>
+            <p class="text-gray-700 font-notosans mb-4">Préparation de surfaces pour garantir l’adhérence et la durabilité des revêtements appliqués.</p>
+            <a href="#" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="assets/images/metier3.webp" alt="Métier 3" class="h-40 w-full object-cover rounded-xl mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Pelliculage</h4>
+            <p class="text-gray-700 font-notosans mb-4">Fabrication de structures et outillages sur mesure pour répondre aux besoins spécifiques.</p>
+            <a href="#" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="assets/images/metier4.webp" alt="Métier 4" class="h-40 w-full object-cover rounded-xl mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Chaudronnerie mécanique</h4>
+            <p class="text-gray-700 font-notosans mb-4">Solutions techniques de protection et d’optimisation des performances des matériaux.</p>
+            <a href="#" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="assets/images/metier5.webp" alt="Métier 5" class="h-40 w-full object-cover rounded-xl mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Traitement de surface</h4>
+            <p class="text-gray-700 font-notosans mb-4">Conception de supports de transport adaptés aux spécificités du ferroviaire et du BTP.</p>
+            <a href="#" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+        </div>
+      </div>
+    </section>
 
     <!-- bas de page -->
     <footer class="bg-red-800 text-white py-3">
