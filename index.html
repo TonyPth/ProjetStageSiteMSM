@@ -6,12 +6,12 @@
         <title>Page d'accueil</title>
         <link rel="stylesheet" href="style.css">
       
-        <!-- Polices d'écriture -->
+        <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
       
-        <!-- Tailwind CSS -->
+        <!-- importation de tailwind -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
           tailwind.config = {
@@ -22,7 +22,8 @@
                   outfit: ['Outfit', 'sans-serif'],
                   spectral: ['Spectral', 'serif'],
                   notosans: ['Noto Sans', 'sans-serif'],
-                  audiowide: ['Audiowide', 'sans-serif']
+                  audiowide: ['Audiowide', 'sans-serif'],
+                  junegull: ['PoliceMSM', 'sans-serif']
                 }
               }
             }
@@ -31,48 +32,48 @@
       </head>
   <body class="bg-gray-50 text-gray-800">
 
-    <!-- Hero Section -->
-    <section class="relative h-screen pb-12 bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/recherche1.webp');">
-        <!-- Overlay sombre -->
-        <div class="absolute inset-0 bg-black bg-opacity-35 z-10"></div>
-      
-        <!-- Menu -->
-        <div class="absolute top-0 left-0 w-full z-30">
-          <div class="max-w-6xl mx-auto flex justify-between items-center p-6">
-            <img src="assets/images/logomsm.jpg" alt="Logo MSM" class="h-[120px]">
-            <nav class="space-x-4">
-              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Notre Entreprise</a>
-              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Nos métiers</a>
-              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Nous rejoindre</a>
-              <a href="#" class="text-white hover:text-red-400 font-notosans text-xl">Contact</a>
-            </nav>
-          </div>
-        </div>
-      
-        <!-- Texte centré dans l'image -->
-        <div class="relative z-20 flex items-center justify-center h-full">
-          <div class="text-center px-4">
-            <h2 class="text-9xl font-seriftext mb-4">MSM Europeinture</h2>
-            <p class="text-lg font-notosans text-xl">Valoriser et protéger vos supports grâce à notre savoir-faire en peinture industrielle.</p>
-          </div>
-        </div>
-        
-      </section>
+    <!-- section hero -->
+<section class="relative h-screen bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/recherche2.webp');">
+  <!-- film sombre -->
+  <div class="absolute inset-0 bg-black bg-opacity-35 z-10"></div>
 
-      <div class="absolute bottom-0 left-0 w-full bg-red-800 py-2 flex flex-col items-center justify-center z-40">
-        <div class="flex flex-row items-center">
-          <span class="text-white text-xl font-notosans font-semibold tracking-wide">En savoir plus</span>
-          <svg class="ml-2" width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-        </div>
-      </div>
+  <!-- menu -->
+  <div class="absolute top-0 left-0 w-full z-30">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4 sm:p-6">
+      <img src="assets/images/logomsm.jpg" alt="Logo MSM" class="h-16 sm:h-[100px] object-contain">
+      <nav class="flex flex-wrap justify-end gap-2 sm:gap-4">
+        <a href="#" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Notre Entreprise</a>
+        <a href="#" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Nos métiers</a>
+        <a href="#" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Nous rejoindre</a>
+        <a href="#" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Contact</a>
+      </nav>
+    </div>
+  </div>
 
-    <!-- Section de bienvenue avec texte et vidéo -->
+  <!-- contenu central -->
+  <div class="relative z-20 flex flex-col items-center justify-center text-center h-full px-4 pt-20 sm:pt-28">
+    <h2 class="text-4xl sm:text-6xl md:text-8xl font-junegull mb-4">MSM Europeinture</h2>
+    <p class="text-sm sm:text-lg font-notosans max-w-xl">Valoriser et protéger vos supports grâce à notre savoir-faire en peinture industrielle.</p>
+  </div>
+
+  <!-- bandeau bas -->
+  <div class="absolute bottom-0 left-0 w-full bg-red-800 py-2 flex items-center justify-center z-40">
+    <div class="flex flex-row items-center">
+      <span class="text-white text-sm sm:text-xl font-notosans font-semibold tracking-wide">En savoir plus</span>
+      <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+    <!-- section de bienvenue (avec texte et vidéo) -->
 <section class="bg-white py-20 z-20">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       
-      <!-- Colonne texte -->
+      <!-- (gauche) texte -->
       <div>
-        <h3 class="text-6xl font-seriftext text-red-800 mb-4 text-center">Bienvenue</h3>
+        <h3 class="text-6xl font-junegull text-red-800 mb-4 text-center">Bienvenue</h3>
         <p class="text-gray-700 text-lg font-notosans leading-relaxed indent-8 mt-6">
             Depuis plus de 25 ans, MSM Europeinture est un acteur reconnu dans la filière ferroviaire. Spécialisés dans l'application de peinture liquide sur tous types de supports (acier, aluminium, inox, composites) et le traitement de surfaces, nous mettons notre expertise au service de la performance et de la durabilité.
         </p>
@@ -81,7 +82,7 @@
         </p>
       </div>
   
-      <!-- Colonne vidéo -->
+      <!-- (droite) vidéo -->
       <div class="aspect-w-16 aspect-h-9">
         <video 
           id="video-presentation"
@@ -99,14 +100,14 @@
     </div>
   </section>
 
-    <!-- Secteurs d'activité -->
+    <!-- secteurs d'activité -->
     <section class="bg-gray-100 py-20 z-20">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
-          <!-- Colonne gauche : Secteurs -->
+          <!-- (gauche) secteurs -->
           <div>
-            <h3 class="text-6xl font-seriftext text-red-800 mb-4 text-left leading-tight">Nos secteurs d'activité</h3>
-            <ul class="text-2xl font-seriftext text-red-800 mb-2 ml-4 list-disc">
+            <h3 class="text-6xl font-junegull text-red-800 mb-4 text-left leading-tight">Nos secteurs d'activité</h3>
+            <ul class="text-2xl font-junegull text-red-800 mb-2 ml-4 list-disc">
               <li>Ferroviaire</li>
               <li>Militaire</li>
               <li>Bâtiment (charpentes métalliques)</li>
@@ -117,7 +118,7 @@
             </div>
           </div>
       
-          <!-- Colonne droite : Texte descriptif -->
+          <!-- (droite) description -->
           <div>
             <p class="text-gray-700 text-lg font-notosans leading-relaxed indent-8 mt-4">
               Depuis sa création, MSM Europeinture s'engage à faire évoluer son métier avec modernité et exigence. Grâce à une écoute attentive et des prestations compétitives, nous concevons des solutions industrielles fiables, innovantes et durables.
@@ -130,8 +131,26 @@
         </div>
       </section>
 
-    <!-- Footer -->
-    <footer class="bg-red-800 text-white py-8">
+      <!-- images d'illustration -->
+      <section class="relative bg-white overflow-hidden py-0">
+        <div class="carousel-container">
+          <div class="carousel-track" id="carousel-track">
+            <img src="assets/images/secact2.webp" alt="img1" onclick="openImage(this.src)">
+            <img src="assets/images/secact3.webp" alt="img2" onclick="openImage(this.src)">
+            <img src="assets/images/secact4.webp" alt="img3" onclick="openImage(this.src)">
+            <img src="assets/images/secact5.webp" alt="img4" onclick="openImage(this.src)">
+          </div>
+        </div>
+      </section>
+      
+      <!-- lightbox -->
+      <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+        <img id="lightbox-img" class="max-w-full max-h-full rounded shadow-lg" alt="Image agrandie" />
+        <span onclick="closeImage()" class="absolute top-4 right-4 text-white text-3xl cursor-pointer">&times;</span>
+      </div>
+
+    <!-- bas de page -->
+    <footer class="bg-red-800 text-white py-3">
       <div class="max-w-6xl mx-auto text-center">
         <p>© 2025 MSM Europeinture. Tous droits réservés.</p>
       </div>

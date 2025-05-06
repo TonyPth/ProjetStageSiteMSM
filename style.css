@@ -3,3 +3,48 @@
     object-position: center;
     background-color: #000;
   }
+
+  @font-face {
+    font-family: 'PoliceMSM';
+    src: url('assets/fonts/junegull/junegull.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .carousel-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    height: 100%;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .carousel-track img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-track img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
