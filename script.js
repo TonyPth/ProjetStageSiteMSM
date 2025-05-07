@@ -43,3 +43,16 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.classList.remove("flex");
     lightbox.classList.add("hidden");
   }
+
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    const heroHeight = window.innerHeight * 0.9;
+
+    if (window.scrollY > heroHeight) {
+      navbar.classList.remove("bg-transparent");
+      navbar.classList.add("bg-white", "shadow-md");
+    } else {
+      navbar.classList.add("bg-transparent");
+      navbar.classList.remove("bg-white", "shadow-md");
+    }
+  });

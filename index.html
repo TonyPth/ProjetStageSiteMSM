@@ -3,6 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--   
+ __   __  _______  __   __    _______  __   __  ______    _______  _______  _______  ___   __    _  _______  __   __  ______    _______ 
+|  |_|  ||       ||  |_|  |  |       ||  | |  ||    _ |  |       ||       ||       ||   | |  |  | ||       ||  | |  ||    _ |  |       |
+|       ||  _____||       |  |    ___||  | |  ||   | ||  |   _   ||    _  ||    ___||   | |   |_| ||_     _||  | |  ||   | ||  |    ___|
+|       || |_____ |       |  |   |___ |  |_|  ||   |_||_ |  | |  ||   |_| ||   |___ |   | |       |  |   |  |  |_|  ||   |_||_ |   |___ 
+|       ||_____  ||       |  |    ___||       ||    __  ||  |_|  ||    ___||    ___||   | |  _    |  |   |  |       ||    __  ||    ___|
+| ||_|| | _____| || ||_|| |  |   |___ |       ||   |  | ||       ||   |    |   |___ |   | | | |   |  |   |  |       ||   |  | ||   |___ 
+|_|   |_||_______||_|   |_|  |_______||_______||___|  |_||_______||___|    |_______||___| |_|  |__|  |___|  |_______||___|  |_||_______|                                   
+                    
+        MSM Europeinture – Peinture industrielle & solutions techniques
+
+        -->
+
         <title>Page d'accueil</title>
         <link rel="stylesheet" href="style.css">
       
@@ -32,20 +46,21 @@
       </head>
   <body class="bg-gray-50 text-gray-800">
 
-    <!-- section hero -->
+<!-- section hero -->
 <section class="relative h-screen bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/recherche2.webp');">
-  <!-- film sombre -->
-  <div class="absolute inset-0 bg-black bg-opacity-25 z-10"></div>
+  
+  <!-- filme sombre -->
+  <div class="absolute inset-0 bg-black bg-opacity-35 z-10"></div>
 
   <!-- menu -->
-  <div class="absolute top-0 left-0 w-full z-30">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4 sm:p-6">
+  <div id="navbar" class="fixed top-0 left-0 w-full z-30 transition-colors duration-500 bg-transparent">
+    <div class="max-w-8xl mx-auto flex justify-between items-center p-4 sm:p-6">
       <img src="assets/images/logomsm.jpg" alt="Logo MSM" class="h-16 sm:h-[100px] object-contain">
       <nav class="flex flex-wrap justify-end gap-2 sm:gap-4">
-        <a href="pages/about.html" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Notre Entreprise</a>
-        <a href="pages/metiers/sommairemetiers.html" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Nos métiers</a>
-        <a href="pages/joinus.html" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Nous rejoindre</a>
-        <a href="pages/contact.html" class="text-white hover:text-red-400 font-notosans text-sm sm:text-base md:text-xl">Contact</a>
+        <a href="pages/about.html" class="nav-link">Notre Entreprise</a>
+        <a href="pages/metiers/sommairemetiers.html" class="nav-link">Nos métiers</a>
+        <a href="pages/joinus.html" class="nav-link">Nous rejoindre</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
       </nav>
     </div>
   </div>
@@ -178,7 +193,7 @@
             <img src="assets/images/pelliculage.webp" alt="Métier 3" class="h-40 w-full object-cover mb-4">
             <h4 class="text-2xl font-junegull text-red-800 mb-2">Pelliculage</h4>
             <p class="text-gray-700 font-notosans mb-4">Pose de films adhésifs (anti-graffitis, anti-rayures, graphiques 2D/3D) en atelier ou sur site, en partenariat avec 3M.</p>
-            <a href="pages/metiers/prestationsinsitu.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+            <a href="pages/metiers/pelliculage.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
           </div>
     
           <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
@@ -203,7 +218,7 @@
 <section class="bg-gray-100 py-20 z-20">
   <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
     
-    <!-- ??? remplacer par: liste d'équipements à guauche et galerie photo à droite ??? -->
+    <!-- ??? remplacer par: liste d'équipements à gauche et galerie photo à droite ??? -->
 
     <!-- (gauche) texte d’introduction -->
     <div>
@@ -243,7 +258,6 @@
         </li>
       </ul>
     </div>
-
   </div>
 </section>
 
