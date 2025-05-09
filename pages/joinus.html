@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rejoignez-nous !</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nous rejoindre – MSM Europeinture</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .nav-link {
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #dc2626; /* rouge */
+      text-decoration: underline;
+    }
+    .bg-hero {
+      background-image: url('../assets/images/recherche2.webp');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
 </head>
-<body>
-    <h1>OFFRES/RECHERCHE D'EMPLOIS</h1>
+<body class="font-notosans text-gray-800">
+
+  <!-- Barre de navigation -->
+  <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-transparent">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+      <a href="../index.html">
+        <img src="../assets/images/logomsm.jpg" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
+      </a>
+      <nav class="flex flex-wrap justify-end gap-2 sm:gap-4">
+        <a href="about.html" class="nav-link text-white">Notre Entreprise</a>
+        <a href="metiers/sommairemetiers.html" class="nav-link text-white">Nos métiers</a>
+        <a href="joinus.html" class="nav-link text-white">Nous rejoindre</a>
+        <a href="contact.html" class="nav-link text-white">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero section -->
+  <section class="relative h-[60vh] bg-hero text-white">
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+    <div class="relative z-20 flex flex-col justify-center items-center h-full text-center px-4">
+      <h1 class="text-4xl sm:text-6xl font-junegull mb-4">Nous rejoindre</h1>
+      <p class="text-sm sm:text-lg max-w-2xl">Envie de vous investir dans une entreprise dynamique et en plein développement ? Rejoignez-nous !</p>
+    </div>
+  </section>
+
+  <!-- Contenu -->
+  <section class="bg-white py-12 px-6 sm:px-12">
+    <div class="max-w-5xl mx-auto text-center mb-10">
+      <h2 class="text-2xl sm:text-4xl font-semibold mb-4">Pourquoi choisir MSM Europeinture ?</h2>
+      <p class="text-base sm:text-lg">MSM Europeinture recrute régulièrement pour accompagner sa croissance. Vous aimez travailler en équipe et relever de nouveaux défis ? Rejoignez une entreprise à taille humaine avec de vraies valeurs humaines et professionnelles.</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-lg p-8 space-y-6">
+      <h3 class="text-xl sm:text-2xl font-semibold text-red-800">Postes actuellement ouverts :</h3>
+      <ul class="list-disc list-inside space-y-3 text-left text-base sm:text-lg">
+        <li><strong>Technico-commerciaux</strong> expérimentés en traitement de surfaces</li>
+        <li><strong>Peintres industriels</strong> débutants ou confirmés – <span class="text-red-600 font-semibold">URGENT</span></li>
+        <li><strong>Enduiseurs / préparateurs</strong> débutants ou expérimentés</li>
+        <li><strong>Sableurs / grenailleurs</strong></li>
+        <li><strong>Manutentionnaires</strong></li>
+      </ul>
+
+      <div class="mt-6 text-center">
+        <p class="text-lg font-medium">Envoyez votre CV à <a href="mailto:recrutement@msmeuropeinture.fr" class="text-red-700 underline hover:text-red-900">recrutement@msmeuropeinture.fr</a> ou contactez-nous via notre <a href="contact.html" class="text-red-700 underline hover:text-red-900">formulaire de contact</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-red-800 text-white text-center py-3 text-sm sm:text-base">
+    <p>© 2025 MSM Europeinture. Tous droits réservés.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+
 </body>
 </html>

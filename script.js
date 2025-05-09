@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const heroSectionHeight = document.querySelector('.h-screen').offsetHeight;
 
-    if (window.scrollY > heroSectionHeight / 2) {
+    if (window.scrollY > heroSectionHeight / 2.5) {
       navbar.classList.remove('bg-transparent');
       navbar.classList.add('bg-white', 'shadow-md');
 
