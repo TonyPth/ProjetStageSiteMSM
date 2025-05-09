@@ -44,15 +44,26 @@ document.addEventListener("DOMContentLoaded", () => {
     lightbox.classList.add("hidden");
   }
 
-  window.addEventListener("scroll", () => {
-    const navbar = document.getElementById("navbar");
-    const heroHeight = window.innerHeight * 0.9;
+  window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const heroSectionHeight = document.querySelector('.h-screen').offsetHeight;
 
-    if (window.scrollY > heroHeight) {
-      navbar.classList.remove("bg-transparent");
-      navbar.classList.add("bg-white", "shadow-md");
+    if (window.scrollY > heroSectionHeight / 2) {
+      navbar.classList.remove('bg-transparent');
+      navbar.classList.add('bg-white', 'shadow-md');
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-white');
+        link.classList.add('text-gray-800');
+      });
     } else {
-      navbar.classList.add("bg-transparent");
-      navbar.classList.remove("bg-white", "shadow-md");
+      navbar.classList.remove('bg-white', 'shadow-md');
+      navbar.classList.add('bg-transparent');
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-gray-800');
+        link.classList.add('text-white');
+      });
     }
   });
