@@ -17,14 +17,22 @@
 
         -->
 
-        <title>Page d'accueil</title>
+        <title>Recrutement</title>
         <link rel="stylesheet" href="style.css">
       
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-      
+        <style>
+          @font-face {
+            font-family: 'PoliceMSM';
+            src: url('../assets/fonts/junegull/junegull.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+          }
+        </style>
         <!-- importation de tailwind -->
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
@@ -53,10 +61,10 @@
   <img src="../assets/images/logomsm.jpg" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
 </a>
       <nav class="flex flex-wrap justify-end gap-2 sm:gap-4">
-        <a href="pages/about.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Notre Entreprise</a>
-        <a href="pages/metiers/sommairemetiers.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Nos métiers</a>
-        <a href="pages/joinus.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Nous rejoindre</a>
-        <a href="pages/contact.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Contact</a>
+        <a href="about.html" class="nav-link text-gray-800 transition-colors duration-300 hover:text-red-600 font-notosans">Notre Entreprise</a>
+        <a href="metiers/sommairemetiers.html" class="nav-link text-gray-800 transition-colors duration-300 hover:text-red-600 font-notosans">Nos métiers</a>
+        <a href="joinus.html" class="nav-link text-gray-800 transition-colors duration-300 hover:text-red-600 font-notosans">Nous rejoindre</a>
+        <a href="contact.html" class="nav-link text-gray-800 transition-colors duration-300 hover:text-red-600 font-notosans">Contact</a>
       </nav>
     </div>
   </div>
@@ -64,7 +72,7 @@
   <!-- Contenu -->
   <section id="main-content" class="bg-white py-12 px-6 sm:px-12">
     <div class="max-w-5xl mx-auto text-center mb-10">
-      <h2 class="text-2xl sm:text-4xl font-semibold mb-4">Pourquoi choisir MSM Europeinture ?</h2>
+      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center">Pourquoi choisir MSM Europeinture ?</h3>
       <p class="text-base sm:text-lg">MSM Europeinture recrute régulièrement pour accompagner sa croissance. Vous aimez travailler en équipe et relever de nouveaux défis ? Rejoignez une entreprise à taille humaine avec de vraies valeurs humaines et professionnelles.</p>
     </div>
 
@@ -79,7 +87,7 @@
       </ul>
 
       <div class="mt-6 text-center">
-        <p class="text-lg font-medium">Envoyez votre CV à <a href="mailto:recrutement@msmeuropeinture.fr" class="text-red-700 underline hover:text-red-900">recrutement@msmeuropeinture.fr</a> ou contactez-nous via notre <a href="contact.html" class="text-red-700 underline hover:text-red-900">formulaire de contact</a>.</p>
+        <p class="text-lg font-medium">Pour candidater, contactez Dominique DELILLE, directeur du site, par téléphone au 03 27 46 16 16, ou par mail à <a href="mailto:ddelille@msm-europeinture.fr" class="text-red-700 underline hover:text-red-900">ddelille@msm-europeinture.fr</a> ou contactez-nous via notre <a href="../pages/contact.html" class="text-red-700 underline hover:text-red-900">formulaire de contact</a>.</p>
       </div>
     </div>
   </section>
@@ -90,6 +98,8 @@
       <p class="text-sm sm:text-base">© 2025 MSM Europeinture. Tous droits réservés.</p>
     </div>
   </footer>
+
+  <script src="../script.js"></script>
 
 </body>
 </html>

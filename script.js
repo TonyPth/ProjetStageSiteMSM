@@ -67,3 +67,24 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const mainContent = document.getElementById('main-content');
+    
+    if (navbar && mainContent) {
+      const navbarHeight = navbar.offsetHeight;
+      mainContent.style.paddingTop = `${navbarHeight + 20}px`;
+    }
+  });
+
+  // on calcule là où le contenu de la page peut commencer par rapport à la navbar
+  window.addEventListener('resize', () => {
+    const navbar = document.getElementById('navbar');
+    const mainContent = document.getElementById('main-content');
+
+    if (navbar && mainContent) {
+      const navbarHeight = navbar.offsetHeight;
+      mainContent.style.paddingTop = `${navbarHeight + 20}px`;
+    }
+  });
