@@ -35,7 +35,7 @@
                   seriftext: ['DM Serif Text', 'serif'],
                   outfit: ['Outfit', 'sans-serif'],
                   spectral: ['Spectral', 'serif'],
-                  notosans: ['Noto Sans', 'sans-serif'],
+                  notosans: ['Noto Sans', 'serif'],
                   audiowide: ['Audiowide', 'sans-serif'],
                   junegull: ['PoliceMSM', 'sans-serif']
                 }
@@ -148,7 +148,8 @@
         </div>
       </section>
 
-      <!-- images d'illustration -->
+      <!-- images d'illustration: carrousel en .js -->
+      <!-- à ajouter: possibilité de scroll  les images de gauche à droite -->
       <section class="relative bg-white overflow-hidden py-0">
         <div class="carousel-container">
           <div class="carousel-track" id="carousel-track">
@@ -163,7 +164,7 @@
         </div>
       </section>
       
-      <!-- lightbox -->
+      <!-- lightbox: affichage en grand d'une image -->
       <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
         <img id="lightbox-img" class="max-w-full max-h-full rounded shadow-lg" alt="Image agrandie" />
         <span onclick="closeImage()" class="absolute top-4 right-4 text-white text-3xl cursor-pointer">&times;</span>

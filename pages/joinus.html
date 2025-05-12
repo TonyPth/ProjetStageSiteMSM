@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nous rejoindre – MSM Europeinture</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .nav-link {
-      transition: color 0.3s ease, text-decoration 0.3s ease;
-    }
-    .nav-link:hover {
-      color: #dc2626; /* rouge */
-      text-decoration: underline;
-    }
-    .bg-hero {
-      background-image: url('../assets/images/recherche2.webp');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-  </style>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--   
+ __   __  _______  __   __    _______  __   __  ______    _______  _______  _______  ___   __    _  _______  __   __  ______    _______ 
+|  |_|  ||       ||  |_|  |  |       ||  | |  ||    _ |  |       ||       ||       ||   | |  |  | ||       ||  | |  ||    _ |  |       |
+|       ||  _____||       |  |    ___||  | |  ||   | ||  |   _   ||    _  ||    ___||   | |   |_| ||_     _||  | |  ||   | ||  |    ___|
+|       || |_____ |       |  |   |___ |  |_|  ||   |_||_ |  | |  ||   |_| ||   |___ |   | |       |  |   |  |  |_|  ||   |_||_ |   |___ 
+|       ||_____  ||       |  |    ___||       ||    __  ||  |_|  ||    ___||    ___||   | |  _    |  |   |  |       ||    __  ||    ___|
+| ||_|| | _____| || ||_|| |  |   |___ |       ||   |  | ||       ||   |    |   |___ |   | | | |   |  |   |  |       ||   |  | ||   |___ 
+|_|   |_||_______||_|   |_|  |_______||_______||___|  |_||_______||___|    |_______||___| |_|  |__|  |___|  |_______||___|  |_||_______|                                   
+                    
+        MSM Europeinture – Peinture industrielle & solutions techniques
+
+        -->
+
+        <title>Page d'accueil</title>
+        <link rel="stylesheet" href="style.css">
+      
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      
+        <!-- importation de tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  seriftext: ['DM Serif Text', 'serif'],
+                  outfit: ['Outfit', 'sans-serif'],
+                  spectral: ['Spectral', 'serif'],
+                  notosans: ['Noto Sans', 'serif'],
+                  audiowide: ['Audiowide', 'sans-serif'],
+                  junegull: ['PoliceMSM', 'sans-serif']
+                }
+              }
+            }
+          }
+        </script>
+      </head>
 <body class="font-notosans text-gray-800">
 
-  <!-- Barre de navigation -->
-  <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-transparent">
+  <!-- menu -->
+  <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-white shadow-md">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
       <a href="../index.html">
-        <img src="../assets/images/logomsm.jpg" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
-      </a>
+  <img src="../assets/images/logomsm.jpg" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
+</a>
       <nav class="flex flex-wrap justify-end gap-2 sm:gap-4">
-        <a href="about.html" class="nav-link text-white">Notre Entreprise</a>
-        <a href="metiers/sommairemetiers.html" class="nav-link text-white">Nos métiers</a>
-        <a href="joinus.html" class="nav-link text-white">Nous rejoindre</a>
-        <a href="contact.html" class="nav-link text-white">Contact</a>
+        <a href="pages/about.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Notre Entreprise</a>
+        <a href="pages/metiers/sommairemetiers.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Nos métiers</a>
+        <a href="pages/joinus.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Nous rejoindre</a>
+        <a href="pages/contact.html" class="nav-link text-white transition-colors duration-300 hover:text-red-600 font-notosans">Contact</a>
       </nav>
     </div>
   </div>
 
-  <!-- Hero section -->
-  <section class="relative h-[60vh] bg-hero text-white">
-    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-    <div class="relative z-20 flex flex-col justify-center items-center h-full text-center px-4">
-      <h1 class="text-4xl sm:text-6xl font-junegull mb-4">Nous rejoindre</h1>
-      <p class="text-sm sm:text-lg max-w-2xl">Envie de vous investir dans une entreprise dynamique et en plein développement ? Rejoignez-nous !</p>
-    </div>
-  </section>
-
   <!-- Contenu -->
-  <section class="bg-white py-12 px-6 sm:px-12">
+  <section id="main-content" class="bg-white py-12 px-6 sm:px-12">
     <div class="max-w-5xl mx-auto text-center mb-10">
       <h2 class="text-2xl sm:text-4xl font-semibold mb-4">Pourquoi choisir MSM Europeinture ?</h2>
       <p class="text-base sm:text-lg">MSM Europeinture recrute régulièrement pour accompagner sa croissance. Vous aimez travailler en équipe et relever de nouveaux défis ? Rejoignez une entreprise à taille humaine avec de vraies valeurs humaines et professionnelles.</p>
     </div>
 
     <div class="max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-lg p-8 space-y-6">
-      <h3 class="text-xl sm:text-2xl font-semibold text-red-800">Postes actuellement ouverts :</h3>
+      <h3 class="text-xl sm:text-2xl font-semibold text-red-800">Nous recherchons actuellement :</h3>
       <ul class="list-disc list-inside space-y-3 text-left text-base sm:text-lg">
         <li><strong>Technico-commerciaux</strong> expérimentés en traitement de surfaces</li>
         <li><strong>Peintres industriels</strong> débutants ou confirmés – <span class="text-red-600 font-semibold">URGENT</span></li>
@@ -70,12 +84,12 @@
     </div>
   </section>
 
-  <!-- Pied de page -->
-  <footer class="bg-red-800 text-white text-center py-3 text-sm sm:text-base">
-    <p>© 2025 MSM Europeinture. Tous droits réservés.</p>
+  <!-- bas de page -->
+  <footer class="bg-red-800 text-white py-3">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-sm sm:text-base">© 2025 MSM Europeinture. Tous droits réservés.</p>
+    </div>
   </footer>
-
-  <script src="../script.js"></script>
 
 </body>
 </html>
