@@ -41,30 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbarHeight = navbar.offsetHeight;
     mainContent.style.paddingTop = `${navbarHeight + 20}px`;
   }
-
-  const toggleButton = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-
-  if (toggleButton && mobileMenu) {
-    toggleButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-      if (!mobileMenu.classList.contains("hidden")) {
-        mobileMenu.classList.add("animate-slideDown");
-        mobileMenu.classList.remove("animate-slideUp");
-      } else {
-        mobileMenu.classList.add("animate-slideUp");
-        mobileMenu.classList.remove("animate-slideDown");
-      }
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!mobileMenu.contains(e.target) && !toggleButton.contains(e.target) && !mobileMenu.classList.contains("hidden")) {
-        mobileMenu.classList.add("hidden");
-        mobileMenu.classList.add("animate-slideUp");
-        mobileMenu.classList.remove("animate-slideDown");
-      }
-    });
-  }
 });
   
   function openImage(src) {
@@ -83,24 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
-    const navLinks = document.querySelectorAll('.nav-link');
     const heroSectionHeight = document.querySelector('.h-screen').offsetHeight;
 
     if (window.scrollY > heroSectionHeight / 1.5) {
       navbar.classList.remove('bg-transparent');
-      navbar.classList.add('bg-white', 'shadow-md');
-
-      navLinks.forEach(link => {
-        link.classList.remove('text-white');
-        link.classList.add('text-black');
-      });
+      navbar.classList.add('bg-red-800', 'shadow-md');
     } else {
-      navbar.classList.remove('bg-white', 'shadow-md');
+      navbar.classList.remove('bg-red-800', 'shadow-md');
       navbar.classList.add('bg-transparent');
-
-      navLinks.forEach(link => {
-        link.classList.remove('text-black');
-        link.classList.add('text-white');
-      });
     }
   });

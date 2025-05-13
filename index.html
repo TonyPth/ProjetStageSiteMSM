@@ -17,7 +17,7 @@
 
         -->
 
-        <title>Page d'accueil</title>
+        <title>Accueil</title>
         <link rel="stylesheet" href="style.css">
       
         <!-- fonts -->
@@ -51,40 +51,33 @@
   
   <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent z-10"></div>
   <!-- film sombre -->
-  <div class="absolute inset-0 bg-black bg-opacity-5 z-10"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-15 z-10"></div>
 
-  <!-- menu -->
-  <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-transparent">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
-      <a href="index.html">
-        <img src="assets/images/logomsm.jpg" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
-      </a>
+ <!-- menu -->
+ <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-transparent shadow-md">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+    <a href="../index.html">
+      <img src="../assets/images/logomsm-removedbgv2.png" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
+    </a>
 
-      <div class="sm:hidden">
-        <button id="menu-toggle" class="text-gray-800 focus:outline-none">
-          <!-- icône hamburger -->
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- liens du menu -->
-      <nav id="mobile-menu" class="transition-all duration-300 ease-in-out hidden sm:flex flex-col sm:flex-row sm:items-center sm:gap-4 absolute sm:static top-full left-0 w-full sm:w-auto bg-white sm:bg-transparent shadow sm:shadow-none p-4 sm:p-0">
-        <a href="pages/about.html" class="nav-link text-white hover:text-red-600 font-notosans">Notre Entreprise</a>
-        <a href="pages/metiers/sommairemetiers.html" class="nav-link text-white hover:text-red-600 font-notosans">Nos Métiers</a>
-        <a href="pages/joinus.html" class="nav-link text-white hover:text-red-600 font-notosans">Nous Rejoindre</a>
-        <a href="pages/contact.html" class="nav-link text-white hover:text-red-600 font-notosans">Contact</a>
-      </nav>
-    </div>
+    <!-- liens du menu toujours visibles -->
+    <nav id="main-menu" class="flex flex-row items-center gap-2 bg-transparent p-0">
+      <a href="pages/about.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Notre Entreprise</a>
+      <a href="pages/metiers/sommairemetiers.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nos Métiers</a>
+      <a href="pages/joinus.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nous Rejoindre</a>
+      <a href="pages/contact.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Contact</a>
+    </nav>
   </div>
+</div>
 
   <!-- contenu central fixe -->
-  <div class="fixed inset-0 flex flex-col items-center justify-center text-center z-20 pointer-events-none">
-    <h2 class="text-4xl sm:text-6xl md:text-8xl font-junegull mb-4 font-bold">MSM Europeinture</h2>
-    <p class="text-sm sm:text-lg font-notosans max-w-xl">Valoriser et protéger vos supports grâce à notre savoir-faire en peinture industrielle.</p>
-  </div>
+<div class="fixed inset-0 flex flex-col items-center justify-center text-center z-20 px-4">
+  <img src="assets/images/logomsm-removedbgv2.png" alt="Logo MSM"
+       class="w-144 sm:w-144 md:w-160 lg:w-192 xl:w-208 mb-4" />
+  <p class="text-xs sm:text-sm md:text-base lg:text-lg font-notosans max-w-md sm:max-w-xl text-white">
+    Valoriser et protéger vos supports grâce à notre savoir-faire en peinture industrielle.
+  </p>
+</div>
 
   <!-- bandeau bas "en savoir plus" -->
   <div class="absolute bottom-0 left-0 w-full bg-red-800 py-2 flex items-center justify-center z-40">
@@ -236,7 +229,7 @@
   <section class="bg-gray-100 py-20 z-20">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
       
-      <!-- ??? remplacer par: liste d'équipements à gauche et galerie photo à droite mmmh maybe ??? -->
+      <!-- ??? remplacer par: liste d'équipements à gauche et galerie photo à droite maybe ??? -->
 
       <!-- (gauche) texte d'introduction -->
       <div>
