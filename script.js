@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const video = document.getElementById("video-presentation");
-  
+  // VIDEO
+  const video = document.getElementById("video-presentation");
+  if (video) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -10,25 +11,61 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }, { threshold: 0.5 });
-  
     observer.observe(video);
-  });
+  }
 
-  window.addEventListener("DOMContentLoaded", () => {
-    const track = document.getElementById("carousel-track");
+  // CAROUSEL
+  const track = document.getElementById("carousel-track");
+  if (track) {
     const images = Array.from(track.children);
     images.forEach(img => {
       const clone = img.cloneNode(true);
       track.appendChild(clone);
     });
+  }
 
-    const lightbox = document.getElementById("lightbox");
+  // LIGHTBOX
+  const lightbox = document.getElementById("lightbox");
+  if (lightbox) {
     lightbox.addEventListener("click", (e) => {
       if (e.target === lightbox) {
         closeImage();
       }
     });
-  });
+  }
+
+  // PADDING TOP DU MAIN
+  const navbar = document.getElementById('navbar');
+  const mainContent = document.getElementById('main-content');
+  if (navbar && mainContent) {
+    const navbarHeight = navbar.offsetHeight;
+    mainContent.style.paddingTop = `${navbarHeight + 20}px`;
+  }
+
+  const toggleButton = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (toggleButton && mobileMenu) {
+    toggleButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      if (!mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("animate-slideDown");
+        mobileMenu.classList.remove("animate-slideUp");
+      } else {
+        mobileMenu.classList.add("animate-slideUp");
+        mobileMenu.classList.remove("animate-slideDown");
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!mobileMenu.contains(e.target) && !toggleButton.contains(e.target) && !mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.add("animate-slideUp");
+        mobileMenu.classList.remove("animate-slideDown");
+      }
+    });
+  }
+});
   
   function openImage(src) {
     const lightbox = document.getElementById("lightbox");
@@ -49,42 +86,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const heroSectionHeight = document.querySelector('.h-screen').offsetHeight;
 
-    if (window.scrollY > heroSectionHeight / 2.5) {
+    if (window.scrollY > heroSectionHeight / 1.5) {
       navbar.classList.remove('bg-transparent');
       navbar.classList.add('bg-white', 'shadow-md');
 
       navLinks.forEach(link => {
         link.classList.remove('text-white');
-        link.classList.add('text-gray-800');
+        link.classList.add('text-black');
       });
     } else {
       navbar.classList.remove('bg-white', 'shadow-md');
       navbar.classList.add('bg-transparent');
 
       navLinks.forEach(link => {
-        link.classList.remove('text-gray-800');
+        link.classList.remove('text-black');
         link.classList.add('text-white');
       });
-    }
-  });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.getElementById('navbar');
-    const mainContent = document.getElementById('main-content');
-    
-    if (navbar && mainContent) {
-      const navbarHeight = navbar.offsetHeight;
-      mainContent.style.paddingTop = `${navbarHeight + 20}px`;
-    }
-  });
-
-  // on calcule là où le contenu de la page peut commencer par rapport à la navbar
-  window.addEventListener('resize', () => {
-    const navbar = document.getElementById('navbar');
-    const mainContent = document.getElementById('main-content');
-
-    if (navbar && mainContent) {
-      const navbarHeight = navbar.offsetHeight;
-      mainContent.style.paddingTop = `${navbarHeight + 20}px`;
     }
   });
