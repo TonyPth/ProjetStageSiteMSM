@@ -14,15 +14,49 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(video);
   }
 
-  // CAROUSEL
-  const track = document.getElementById("carousel-track");
-  if (track) {
+  // CAROUSSEL
+  window.addEventListener("load", () => {
+    const track = document.getElementById("carousel-track");
     const images = Array.from(track.children);
-    images.forEach(img => {
-      const clone = img.cloneNode(true);
-      track.appendChild(clone);
-    });
-  }
+    let scrollSpeed = 0.5; // pixels par frame (~30px/sec à 60fps)
+    let position = 0;
+    let isPaused = false;
+  
+    const containerWidth = document.querySelector(".carousel-container").offsetWidth;
+    const totalWidth = images.reduce((acc, img) => acc + img.offsetWidth + 6, 0); // +6px pour le gap
+    const pauseDuration = 3000; // en ms
+  
+    function animate() {
+      if (!isPaused) {
+        position += scrollSpeed;
+  
+        // Si on atteint la fin
+        if (position >= totalWidth - containerWidth) {
+          isPaused = true;
+  
+          setTimeout(() => {
+            position = 0;
+            track.style.transition = "none";
+            track.style.transform = `translateX(0)`;
+            requestAnimationFrame(() => {
+              isPaused = false;
+              track.style.transition = "transform 0.2s linear";
+              requestAnimationFrame(animate);
+            });
+          }, pauseDuration);
+          return;
+        }
+  
+        track.style.transform = `translateX(-${position}px)`;
+      }
+  
+      requestAnimationFrame(animate);
+    }
+  
+    // Démarrer l'animation
+    track.style.transition = "transform 0.2s linear";
+    animate();
+  });
 
   // LIGHTBOX
   const lightbox = document.getElementById("lightbox");
@@ -39,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainContent = document.getElementById('main-content');
   if (navbar && mainContent) {
     const navbarHeight = navbar.offsetHeight;
-    mainContent.style.paddingTop = `${navbarHeight + 20}px`;
+    mainContent.style.paddingTop = `${navbarHeight + 60}px`;
   }
 });
   
