@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--   
+ __   __  _______  __   __    _______  __   __  ______    _______  _______  _______  ___   __    _  _______  __   __  ______    _______ 
+|  |_|  ||       ||  |_|  |  |       ||  | |  ||    _ |  |       ||       ||       ||   | |  |  | ||       ||  | |  ||    _ |  |       |
+|       ||  _____||       |  |    ___||  | |  ||   | ||  |   _   ||    _  ||    ___||   | |   |_| ||_     _||  | |  ||   | ||  |    ___|
+|       || |_____ |       |  |   |___ |  |_|  ||   |_||_ |  | |  ||   |_| ||   |___ |   | |       |  |   |  |  |_|  ||   |_||_ |   |___ 
+|       ||_____  ||       |  |    ___||       ||    __  ||  |_|  ||    ___||    ___||   | |  _    |  |   |  |       ||    __  ||    ___|
+| ||_|| | _____| || ||_|| |  |   |___ |       ||   |  | ||       ||   |    |   |___ |   | | | |   |  |   |  |       ||   |  | ||   |___ 
+|_|   |_||_______||_|   |_|  |_______||_______||___|  |_||_______||___|    |_______||___| |_|  |__|  |___|  |_______||___|  |_||_______|                                   
+                    
+        MSM Europeinture – Peinture industrielle & solutions techniques
+
+        -->
+
+        <title>Nos métiers - MSM Europeinture</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../assets/images/iconemsm.ico" />
+      
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <style>
+          @font-face {
+            font-family: 'PoliceMSM';
+            src: url('../assets/fonts/junegull/junegull.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+          }
+        </style>
+        <!-- importation de tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  seriftext: ['DM Serif Text', 'serif'],
+                  outfit: ['Outfit', 'sans-serif'],
+                  spectral: ['Spectral', 'serif'],
+                  notosans: ['Noto Sans', 'serif'],
+                  audiowide: ['Audiowide', 'sans-serif'],
+                  junegull: ['PoliceMSM', 'sans-serif']
+                }
+              }
+            }
+          }
+        </script>
+      </head>
+
+<body class="font-notosans text-gray-800">
+  <!-- menu -->
+ <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-red-800 shadow-md">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+    <a href="../index.html">
+      <img src="../assets/images/logomsm-removedbgv2.png" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
+    </a>
+
+    <!-- liens du menu toujours visibles -->
+    <nav id="main-menu" class="flex flex-row items-center gap-2 bg-transparent p-0">
+      <a href="about.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Notre Entreprise</a>
+      <a href="metiers/sommairemetiers.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nos Métiers</a>
+      <a href="joinus.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nous Rejoindre</a>
+      <a href="contact.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Contact</a>
+    </nav>
+  </div>
+</div>
+
+  <!-- Introduction -->
+  <section id="main-content" class="bg-white py-24 px-6 sm:px-12">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center font-bold">Nos métiers</h3>
+      <p class="text-base sm:text-lg">
+        Depuis plus de 20 ans, <strong>MSM Europeinture</strong> accompagne les grands acteurs du ferroviaire en mettant son expertise peinture au service de la performance, de la durabilité et de l’esthétique des pièces traitées. Dans ce secteur aux exigences élevées, nous avons su bâtir des partenariats durables, gages de fiabilité et de flexibilité. Précurseurs dans l’usage de peintures hydrodiluables, nous poursuivons aujourd’hui notre engagement dans une démarche environnementale active.
+      </p>
+    </div>
+
+    <section class="bg-white py-10 z-20">
+      <div class="max-w-6xl mx-auto px-4">
+        
+        <!-- cartes métiers -->
+        <div class="flex flex-wrap justify-center gap-8">
+  
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">            
+            <img src="../assets/images/peinturemetier.webp" alt="Photo Illustration Peinture" class="h-40 w-full object-cover mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Peinture industrielle</h4>
+            <p class="text-gray-700 font-notosans mb-4">Application de peinture liquide sur tous types de surface avec exigence qualité et environnementale.</p>
+            <a href="pages/metiers/peintureliquide.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="../assets/images/insitu.webp" alt="Photo Illustration In Situ" class="h-40 w-full object-cover mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Prestations in situ</h4>
+            <p class="text-gray-700 font-notosans mb-4">Mise à disposition d'équipes qualifiées sur site pour des prestations flexibles, planifiées selon vos besoins et vos process.</p>
+            <a href="pages/metiers/prestationsinsitu.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="../assets/images/pelliculage.webp" alt="Photo Illustration Pelliculage" class="h-40 w-full object-cover mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Pelliculage</h4>
+            <p class="text-gray-700 font-notosans mb-4">Pose de films adhésifs (anti-graffitis, anti-rayures, graphiques 2D/3D) en atelier ou sur site, en partenariat avec 3M.</p>
+            <a href="pages/metiers/pelliculage.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="../assets/images/chaudronneriemecanique.jpg" alt="Photo Illustration Chaudronnerie Mécanique" class="h-40 w-full object-cover mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Chaudronnerie mécanique</h4>
+            <p class="text-gray-700 font-notosans mb-4">Conception et fabrication d'outillages de transport et de manutention sur mesure grâce à notre atelier de mécano-soudure et notre bureau d'étude.</p>
+            <a href="pages/metiers/chaudronneriemecanique.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+          <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+            <img src="../assets/images/traitementsurface.jpg" alt="Photo Illustration Traitement Surface" class="h-40 w-full object-cover mb-4">
+            <h4 class="text-2xl font-junegull text-red-800 mb-2">Traitement de surface</h4>
+            <p class="text-gray-700 font-notosans mb-4">Maîtrise du sablage, grenaillage et corindonnage pour tous types de pièces, jusqu'à 20 x 5 x 5 m, dans le respect strict de vos exigences de rugosité et de finition.</p>
+            <a href="pages/metiers/traitementsurface.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- bas de page -->
+  <footer class="bg-red-800 text-white py-3">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-sm sm:text-base">© 2025 MSM Europeinture. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>

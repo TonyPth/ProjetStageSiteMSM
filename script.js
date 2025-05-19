@@ -18,19 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
     const track = document.getElementById("carousel-track");
     const images = Array.from(track.children);
-    let scrollSpeed = 0.5; // pixels par frame (~30px/sec à 60fps)
+    let scrollSpeed = 0.5; // pixels par frame (en gros 30px sur 60 fps)
     let position = 0;
     let isPaused = false;
   
     const containerWidth = document.querySelector(".carousel-container").offsetWidth;
     const totalWidth = images.reduce((acc, img) => acc + img.offsetWidth + 6, 0); // +6px pour le gap
-    const pauseDuration = 3000; // en ms
+    const pauseDuration = 2500;
   
     function animate() {
       if (!isPaused) {
         position += scrollSpeed;
   
-        // Si on atteint la fin
+        // si on atteint la fin: pause -> reset
         if (position >= totalWidth - containerWidth) {
           isPaused = true;
   
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             track.style.transform = `translateX(0)`;
             requestAnimationFrame(() => {
               isPaused = false;
-              track.style.transition = "transform 0.2s linear";
+              track.style.transition = "transform 0.5s linear";
               requestAnimationFrame(animate);
             });
           }, pauseDuration);
@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
       requestAnimationFrame(animate);
     }
   
-    // Démarrer l'animation
     track.style.transition = "transform 0.2s linear";
     animate();
   });
@@ -75,6 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbarHeight = navbar.offsetHeight;
     mainContent.style.paddingTop = `${navbarHeight + 60}px`;
   }
+
+  console.log("Script JS chargé !");
 });
   
   function openImage(src) {
