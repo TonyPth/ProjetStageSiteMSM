@@ -74,8 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbarHeight = navbar.offsetHeight;
     mainContent.style.paddingTop = `${navbarHeight + 60}px`;
   }
-
-  console.log("Script JS chargé !");
 });
   
   function openImage(src) {
