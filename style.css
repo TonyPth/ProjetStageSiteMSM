@@ -49,3 +49,10 @@
       transform: translateX(-50%);
     }
   }
+
+  .clip-diagonal-left {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }
+  .clip-diagonal-right {
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+  }

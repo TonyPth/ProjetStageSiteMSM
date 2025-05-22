@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
     const track = document.getElementById("carousel-track");
     const images = Array.from(track.children);
-    let scrollSpeed = 0.5; // pixels par frame (en gros 30px sur 60 fps)
+    let scrollSpeed = 0.7; // pixels par frame (en gros 30px sur 60 fps)
     let position = 0;
     let isPaused = false;
   
