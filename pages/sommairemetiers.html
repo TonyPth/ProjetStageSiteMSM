@@ -19,12 +19,6 @@
         font-style: normal;
         font-display: swap;
       }
-      .clip-diagonal-left {
-        clip-path: polygon(100% 0, 100% 100%, 0 100%);
-      }
-      .clip-diagonal-right {
-        clip-path: polygon(0 0, 100% 100%, 0 100%);
-      }
     </style>
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,26 +40,45 @@
     </script>
   </head>
 
-  <body class="font-notosans text-gray-800">
-    <!-- Menu -->
-    <div id="navbar" class="fixed top-0 left-0 w-full z-50 bg-red-800 shadow-md">
-      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-        <a href="../index.html">
-          <img src="../assets/images/logomsm-removedbgv2.png" alt="Logo MSM" class="h-[75px] object-contain">
-        </a>
-        <nav class="flex gap-2">
-          <a href="about.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition">Notre Entreprise</a>
-          <a href="metiers/sommairemetiers.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition">Nos Métiers</a>
-          <a href="joinus.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition">Nous Rejoindre</a>
-          <a href="contact.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition">Contact</a>
-        </nav>
-      </div>
-    </div>
+  <body class="font-notosans text-[#2B2D42]">
+    <!-- menu -->
+ <div id="navbar" class="fixed top-0 left-0 w-full z-50 bg-[#D90429] shadow-xl shadow-black/15">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+    <!-- Logo -->
+    <a href="../index.html">
+      <img src="../assets/images/logomsm-removedbgv2.png" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
+    </a>
+
+    <!-- Liens desktop -->
+    <nav id="main-menu" class="hidden md:flex flex-row items-center gap-2 bg-transparent p-0">
+      <a href="about.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Notre Entreprise</a>
+      <a href="sommairemetiers.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nos Métiers</a>
+      <a href="joinus.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nous Rejoindre</a>
+      <a href="contact.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Contact</a>
+    </nav>
+
+    <!-- Icône hamburger (mobile) -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="md:hidden hidden flex flex-col px-4 pb-4 pt-2 space-y-2 bg-[#D90429]">
+    <a href="about.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Notre Entreprise</a>
+    <a href="sommairemetiers.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nos Métiers</a>
+    <a href="joinus.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nous Rejoindre</a>
+    <a href="contact.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Contact</a>
+  </div>
+</div>
 
     <!-- Introduction -->
-    <section class="bg-white pt-40 pb-24 px-6 sm:px-12">
-      <div class="max-w-4xl mx-auto text-center mb-12">
-        <h3 class="text-5xl lg:text-7xl font-junegull text-red-800 mb-12 font-bold">Nos métiers</h3>
+    <section class="bg-[#EDF2F4] pt-40 pb-24 px-6 sm:px-12">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 font-bold">Nos métiers</h3>
         <p class="text-lg">
           Depuis plus de 20 ans, <strong>MSM Europeinture</strong> accompagne les acteurs du ferroviaire — constructeurs comme sous-traitants — dans leurs processus de traitement et d'application de peinture. Dans un secteur où les exigences sont élevées, qu'il s'agisse de fret, de transport de voyageurs ou de citernes roulantes, l'esthétique compte autant que la protection des supports.
           <br><br>
@@ -77,21 +90,20 @@
     <!-- Peinture industrielle -->
     <section class="relative w-full h-[500px]">
       <div class="absolute inset-0 flex flex-col lg:flex-row">
-        <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/peinturemetier.webp" class="w-full h-full object-cover brightness-75" alt="Peinture industrielle">
-          <div class="absolute inset-0 flex items-center justify-center">       
+        <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden flex items-center justify-center">
+          <img src="../assets/images/peinturemetier.webp" class="w-full h-full object-cover brightness-50" alt="Peinture industrielle">
+          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
             <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Peinture industrielle</h2>     
           </div>
           <div class="absolute top-0 right-0 w-10 h-full bg-gray-100 clip-diagonal-left shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20">
-          <p class="text-lg">L'activité de peinture industrielle chez MSM Europeinture englobe un ensemble de compétences spécialisées dans la préparation des surfaces et l'application de peintures liquides sur une grande diversité de matériaux — acier, aluminium, inox ou composites.
-
+        <div class="w-full lg:w-[50%] flex-col items-center bg-gray-100 p-10 z-20 mb-10">
+          <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">L'activité de peinture industrielle chez MSM Europeinture englobe un ensemble de compétences spécialisées dans la préparation des surfaces et l'application de peintures liquides sur une grande diversité de matériaux — acier, aluminium, inox ou composites.
             Que ce soit pour des pièces de petites dimensions ou des structures de grande taille, nous adaptons nos méthodes en fonction des exigences spécifiques de chaque secteur : ferroviaire, transport, industrie lourde...
-            
-            Grâce à nos certifications ACQPA et aux homologations des plus grands constructeurs ferroviaires, nous garantissons des prestations conformes aux normes les plus strictes en matière d'anticorrosion.
-            
-            Notre site est équipé de six cabines de peinture ainsi que d’une cabine dédiée au traitement de surface, permettant de traiter des pièces jusqu’à 20 mètres de long.</p>
+          </p>
+          <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">Grâce à nos certifications ACQPA et aux homologations des plus grands constructeurs ferroviaires, nous garantissons des prestations conformes aux normes les plus strictes en matière d'anticorrosion.
+            Notre site est équipé de six cabines de peinture ainsi que d’une cabine dédiée au traitement de surface, permettant de traiter des pièces jusqu’à 20 mètres de long.
+          </p>
         </div>
       </div>
       <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white z-30"></div>
@@ -101,13 +113,13 @@
     <section class="relative w-full h-[500px]">
       <div class="absolute inset-0 flex flex-col lg:flex-row-reverse">
         <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/insitu.webp" class="w-full h-full object-cover brightness-75" alt="Prestations in situ">
-          <div class="absolute inset-0 flex items-center justify-center p-8">
+          <img src="../assets/images/insitu.webp" class="w-full h-full object-cover brightness-50" alt="Prestations in situ">
+          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">
             <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Prestations in situ</h2>     
           </div>
           <div class="absolute top-0 left-0 w-10 h-full bg-gray-100 clip-diagonal-right shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20">
+        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
           <p class="text-lg">Afin de répondre à des besoins de flexibilité croissants, nous proposons des prestations in situ, directement sur le site de nos clients.
 
             Ce service sur mesure permet d’intégrer nos opérateurs qualifiés au sein même de vos unités de production, pour des missions ponctuelles ou des renforts de capacité.
@@ -124,13 +136,13 @@
     <section class="relative w-full h-[500px]">
       <div class="absolute inset-0 flex flex-col lg:flex-row">
         <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/pelliculage.webp" class="w-full h-full object-cover brightness-75" alt="Pellicullage">
-          <div class="absolute inset-0 flex items-center justify-center p-8">       
+          <img src="../assets/images/pelliculage.webp" class="w-full h-full object-cover brightness-50" alt="Pellicullage">
+          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
             <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Pelliculage</h2>     
           </div>
           <div class="absolute top-0 right-0 w-10 h-full bg-gray-100 clip-diagonal-left shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20">
+        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
           <p class="text-lg">Depuis 2020, nous avons intégré le pelliculage adhésif à nos savoir-faire, en partenariat avec 3M.
 
             Nos équipes interviennent aussi bien en atelier que sur site pour appliquer différents types de films techniques, répondant à vos besoins esthétiques, fonctionnels ou de protection :
@@ -147,17 +159,17 @@
       <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white z-30"></div>
     </section>
 
-    <!-- Chaudronnerie-mécanique -->
+    <!-- Chaudronnerie mécanique -->
     <section class="relative w-full h-[500px]">
       <div class="absolute inset-0 flex flex-col lg:flex-row-reverse">
         <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/chaudronneriemecanique.jpg" class="w-full h-full object-cover brightness-75" alt="Chaudronnerie mécanique">
-          <div class="absolute inset-0 flex items-center justify-center p-8">       
+          <img src="../assets/images/chaudronneriemecanique.jpg" class="w-full h-full object-cover brightness-50" alt="Chaudronnerie mécanique">
+          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
             <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Chaudronnerie mécanique</h2>     
           </div>
           <div class="absolute top-0 left-0 w-10 h-full bg-gray-100 clip-diagonal-right shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20">
+        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
           <p class="text-lg">Grâce à notre atelier de mécano-soudure et à notre bureau d’étude interne, nous concevons et fabriquons des outillages sur mesure destinés au transport, à la manutention et au conditionnement de pièces peintes.
 
             Notre savoir-faire couvre aussi bien les praticables de transport que les structures spécifiques adaptées à vos contraintes logistiques.
@@ -172,13 +184,13 @@
     <section class="relative w-full h-[500px]">
       <div class="absolute inset-0 flex flex-col lg:flex-row">
         <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/traitementsurface.jpg" class="w-full h-full object-cover brightness-75" alt="Traitement de surface">
-          <div class="absolute inset-0 flex items-center justify-center p-8">       
+          <img src="../assets/images/traitementsurface.jpg" class="w-full h-full object-cover brightness-50" alt="Traitement de surface">
+          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
             <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Traitement de surface</h2>     
           </div>
           <div class="absolute top-0 right-0 w-10 h-full bg-gray-100 clip-diagonal-left shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20">
+        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
           <p class="text-lg">MSM Europeinture maîtrise plusieurs techniques avancées de traitement de surface, en conformité avec les exigences de finition et de rugosité propres à chaque client.
 
             Nos installations permettent d’intervenir sur des pièces allant jusqu’à 20 mètres de long, 5 mètres de large et 5 mètres de haut.
@@ -200,7 +212,7 @@
     
 
     <!-- Footer -->
-    <footer class="bg-red-800 text-white py-3">
+      <footer class="bg-[#D90429] text-white py-3">
       <div class="max-w-6xl mx-auto text-center">
         <p class="text-sm">© 2025 MSM Europeinture Tous droits réservés.</p>
       </div>

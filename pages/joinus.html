@@ -53,34 +53,51 @@
           }
         </script>
       </head>
-<body class="font-notosans text-gray-800">
+<body class="font-notosans text-[#2B2D42]">
 
  <!-- menu -->
- <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-red-800 shadow-md">
+ <div id="navbar" class="fixed top-0 left-0 w-full z-50 bg-[#D90429] shadow-xl shadow-black/15">
   <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+    <!-- Logo -->
     <a href="../index.html">
       <img src="../assets/images/logomsm-removedbgv2.png" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
     </a>
 
-    <!-- liens du menu toujours visibles -->
-    <nav id="main-menu" class="flex flex-row items-center gap-2 bg-transparent p-0">
+    <!-- Liens desktop -->
+    <nav id="main-menu" class="hidden md:flex flex-row items-center gap-2 bg-transparent p-0">
       <a href="about.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Notre Entreprise</a>
       <a href="sommairemetiers.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nos Métiers</a>
       <a href="joinus.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nous Rejoindre</a>
       <a href="contact.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Contact</a>
     </nav>
+
+    <!-- Icône hamburger (mobile) -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="md:hidden hidden flex flex-col px-4 pb-4 pt-2 space-y-2 bg-[#D90429]">
+    <a href="about.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Notre Entreprise</a>
+    <a href="sommairemetiers.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nos Métiers</a>
+    <a href="joinus.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nous Rejoindre</a>
+    <a href="contact.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Contact</a>
   </div>
 </div>
 
   <!-- contenu -->
-  <section id="main-content" class="bg-white py-12 px-6 sm:px-12">
+  <section id="main-content" class="bg-[#EDF2F4] py-12 px-6 sm:px-12">
     <div class="max-w-5xl mx-auto text-center mb-10">
-      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center font-bold">Pourquoi choisir MSM Europeinture ?</h3>
+      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Pourquoi choisir MSM Europeinture ?</h3>
       <p class="text-base sm:text-lg"><strong>MSM Europeinture</strong> recrute régulièrement pour accompagner sa croissance. Vous aimez travailler en équipe et relever de nouveaux défis ? Rejoignez une entreprise à taille humaine avec de vraies valeurs humaines et professionnelles.</p>
     </div>
 
     <div class="max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-lg p-8 space-y-6">
-      <h3 class="text-xl sm:text-2xl font-semibold text-red-800">Nous recherchons actuellement :</h3>
+      <h3 class="text-xl sm:text-2xl font-semibold text-[#D90429]">Nous recherchons actuellement :</h3>
       <ul class="list-disc list-inside space-y-3 text-left text-base sm:text-lg">
         <li><strong>Technico-commerciaux</strong> expérimentés en traitement de surfaces</li>
         <li><strong>Peintres industriels</strong> débutants ou confirmés – <span class="text-red-600 font-bold">URGENT</span></li>
@@ -96,7 +113,7 @@
   </section>
 
   <!-- bas de page -->
-  <footer class="bg-red-800 text-white py-3">
+  <footer class="bg-[#D90429] text-white py-3">
     <div class="max-w-6xl mx-auto text-center">
       <p class="text-sm sm:text-base">© 2025 MSM Europeinture. Tous droits réservés.</p>
     </div>

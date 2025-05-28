@@ -45,7 +45,7 @@
           }
         </script>
       </head>
-  <body class="bg-gray-50 text-gray-800">
+  <body class="bg-gray-50 text-[#2B2D42]">
 
 <!-- HERO SECTION -->
 <section class="relative h-screen bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/recherche1.webp');">
@@ -57,17 +57,34 @@
  <!-- menu -->
  <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-transparent">
   <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+    <!-- Logo -->
     <a href="../index.html">
       <img src="../assets/images/logomsm-removedbgv2.png" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
     </a>
 
-    <!-- liens du menu toujours visibles -->
-    <nav id="main-menu" class="flex flex-row items-center gap-2 bg-transparent p-0">
-      <a href="pages/about.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Notre Entreprise</a>
-      <a href="pages/sommairemetiers.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nos Métiers</a>
-      <a href="pages/joinus.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nous Rejoindre</a>
-      <a href="pages/contact.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Contact</a>
+    <!-- Liens desktop -->
+    <nav id="main-menu" class="hidden md:flex flex-row items-center gap-2 bg-transparent p-0">
+      <a href="about.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Notre Entreprise</a>
+      <a href="sommairemetiers.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nos Métiers</a>
+      <a href="joinus.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nous Rejoindre</a>
+      <a href="contact.html" class="nav-link text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Contact</a>
     </nav>
+
+    <!-- Icône hamburger (mobile) -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="md:hidden hidden flex flex-col px-4 pb-4 pt-2 space-y-2 bg-black/70 backdrop-blur-sm">
+    <a href="pages/about.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Notre Entreprise</a>
+    <a href="pages/sommairemetiers.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nos Métiers</a>
+    <a href="pages/joinus.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nous Rejoindre</a>
+    <a href="pages/contact.html" class="text-white font-notosans px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Contact</a>
   </div>
 </div>
 
@@ -81,7 +98,7 @@
 </div>
 
   <!-- bandeau bas "en savoir plus" -->
-  <div class="absolute bottom-0 left-0 w-full bg-red-800 py-2 flex items-center justify-center z-40">
+  <div class="absolute bottom-0 left-0 w-full bg-[#D90429] py-2 flex items-center justify-center z-40">
     <div class="flex flex-row items-center">
       <span class="text-white text-sm sm:text-xl font-notosans font-semibold tracking-wide">En savoir plus</span>
       <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
@@ -94,12 +111,12 @@
 <!-- contenu qui défile par dessus -->
 <div class="relative z-30 bg-white">
   <!-- BIENVENUE -->
-  <section class="bg-white py-20 z-20">
+  <section class="bg-[#EDF2F4] py-20 z-20">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       
       <!-- (gauche) texte -->
       <div>
-        <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center font-bold">Bienvenue</h3>
+        <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Bienvenue</h3>
         <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">
             Depuis plus de 25 ans, MSM Europeinture est un acteur reconnu dans la filière ferroviaire. Spécialisés dans l'application de peinture liquide sur tous types de supports (acier, aluminium, inox, composites) et le traitement de surfaces, nous mettons notre expertise au service de la performance et de la durabilité.
         </p>
@@ -132,8 +149,8 @@
       
       <!-- (gauche) secteurs d'activité -->
       <div>
-        <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center font-bold">Nos secteurs d'activité</h3>
-        <ul class="text-2xl font-junegull text-red-800 mb-2 ml-4 list-disc">
+        <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nos secteurs d'activité</h3>
+        <ul class="text-2xl font-junegull text-[#D90429] mb-2 ml-4 list-disc">
           <li>Ferroviaire</li>
           <li>Militaire</li>
           <li>Bâtiment (charpentes métalliques)</li>
@@ -159,7 +176,7 @@
 
   <!-- GALERIE CAROUSSEL -->
   <!-- TODO: possibilité de scroll les images de gauche à droite -->
-  <section class="relative bg-red-800 overflow-hidden py-0">
+  <section class="relative bg-[#D90429] overflow-hidden py-0">
     <div class="carousel-container">
       <div class="carousel-track" id="carousel-track">
         <img src="assets/images/secact1.webp" alt="img1">
@@ -183,60 +200,61 @@
   </div>
 
   <!-- METIERS -->
-  <section class="bg-white py-20 z-20">
+  <section class="bg-[#EDF2F4] py-20 z-20">
     <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center font-bold">Nos Métiers</h3>
+      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nos Métiers</h3>
       
       <!-- cartes métiers -->
       <div class="flex flex-wrap justify-center gap-8">
 
         <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">            
           <img src="assets/images/peinturemetier.webp" alt="Photo Illustration Peinture" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-red-800 mb-2">Peinture industrielle</h4>
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Peinture industrielle</h4>
           <p class="text-gray-700 font-notosans mb-4">Application de peinture liquide sur tous types de surface avec exigence qualité et environnementale.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
         </div>
   
         <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
           <img src="assets/images/insitu.webp" alt="Photo Illustration In Situ" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-red-800 mb-2">Prestations in situ</h4>
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Prestations in situ</h4>
           <p class="text-gray-700 font-notosans mb-4">Mise à disposition d'équipes qualifiées sur site pour des prestations flexibles, planifiées selon vos besoins et vos process.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
         </div>
   
         <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
           <img src="assets/images/pelliculage.webp" alt="Photo Illustration Pelliculage" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-red-800 mb-2">Pelliculage</h4>
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Pelliculage</h4>
           <p class="text-gray-700 font-notosans mb-4">Pose de films adhésifs (anti-graffitis, anti-rayures, graphiques 2D/3D) en atelier ou sur site, en partenariat avec 3M.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
         </div>
   
         <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
           <img src="assets/images/chaudronneriemecanique.jpg" alt="Photo Illustration Chaudronnerie Mécanique" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-red-800 mb-2">Chaudronnerie mécanique</h4>
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Chaudronnerie mécanique</h4>
           <p class="text-gray-700 font-notosans mb-4">Conception et fabrication d'outillages de transport et de manutention sur mesure grâce à notre atelier de mécano-soudure et notre bureau d'étude.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
         </div>
   
         <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
           <img src="assets/images/traitementsurface.jpg" alt="Photo Illustration Traitement Surface" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-red-800 mb-2">Traitement de surface</h4>
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Traitement de surface</h4>
           <p class="text-gray-700 font-notosans mb-4">Maîtrise du sablage, grenaillage et corindonnage pour tous types de pièces, jusqu'à 20 x 5 x 5 m, dans le respect strict de vos exigences de rugosité et de finition.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-red-800 text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
         </div>
   
       </div>
     </div>
   </section>
 
+  <!-- RECRUTEMENT -->
   <section class="bg-gray-100 py-12 px-6 sm:px-12">
     <div class="max-w-5xl mx-auto text-center mb-10">
-      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center font-bold">Nous recrutons !</h3>
+      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nous recrutons !</h3>
       <p class="text-base sm:text-lg"><strong>MSM Europeinture</strong> recrute régulièrement pour accompagner sa croissance. Vous aimez travailler en équipe et relever de nouveaux défis ? Rejoignez une entreprise à taille humaine avec de vraies valeurs humaines et professionnelles.</p>
     </div>
 
     <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-6">
-      <h3 class="text-xl sm:text-2xl font-semibold text-red-800">Nous recherchons actuellement :</h3>
+      <h3 class="text-xl sm:text-2xl font-semibold text-[#D90429]">Nous recherchons actuellement :</h3>
       <ul class="list-disc list-inside space-y-3 text-left text-base sm:text-lg">
         <li><strong>Technico-commerciaux</strong> expérimentés en traitement de surfaces</li>
         <li><strong>Peintres industriels</strong> débutants ou confirmés – <span class="text-red-600 font-bold">URGENT</span></li>
@@ -246,20 +264,20 @@
       </ul>
 
       <div class="mt-6 text-center">
-        <a href="pages/contact.html" class="mt-auto inline-block bg-red-800 text-white px-8 py-5 rounded-full font-notosans text-base hover:bg-red-700 transition">CONTACTEZ-NOUS !</a>
+        <a href="pages/contact.html" class="mt-auto inline-block bg-[#D90429] text-white px-8 py-5 rounded-full font-notosans text-base hover:bg-red-700 transition">CONTACTEZ-NOUS !</a>
       </div>
     </div>
   </section>
 
   <!-- EQUIPEMENTS -->
-  <section class="bg-white py-20 z-20">
+  <section class="bg-[#EDF2F4] py-20 z-20">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
       
       <!-- ? TODO: remplacer par liste d'équipements à gauche et galerie photos à droite -->
 
       <!-- (gauche) texte d'introduction -->
       <div>
-        <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-red-800 mb-12 text-center font-bold">Nos Équipements</h3>
+        <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nos Équipements</h3>
         <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">
           <strong>MSM Europeinture</strong> dispose d'un site industriel de 8000 m², dont 6000 m² bâtis, entièrement dédié à la performance de vos projets. 
           Grâce à nos cabines grand format, nos lignes de peinture liquide, notre cabine de grenaillage ainsi que nos équipements de manutention
@@ -299,7 +317,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-red-800 text-white py-3">
+  <footer class="bg-[#D90429] text-white py-3">
     <div class="max-w-6xl mx-auto text-center">
       <p class="text-sm sm:text-base">© 2025 MSM Europeinture. Tous droits réservés.</p>
     </div>

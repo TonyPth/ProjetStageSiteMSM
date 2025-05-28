@@ -92,13 +92,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
+    const mobileMenu = this.document.getElementById('mobile-menu');
     const heroSectionHeight = document.querySelector('.h-screen').offsetHeight;
 
     if (window.scrollY > heroSectionHeight / 1.5) {
       navbar.classList.remove('bg-transparent');
-      navbar.classList.add('bg-red-800', 'shadow-md');
+      mobileMenu.classList.remove('bg-transparent', 'bg-black/70', 'backdrop-blur-sm');
+      navbar.classList.add('bg-[#D90429]', 'shadow-xl', 'shadow-black/15');
+      mobileMenu.classList.add('bg-[#D90429]');
     } else {
-      navbar.classList.remove('bg-red-800', 'shadow-md');
+      navbar.classList.remove('bg-[#D90429]', 'shadow-xl', 'shadow-black/15');
+      mobileMenu.classList.remove('bg-[#D90429]');
       navbar.classList.add('bg-transparent');
+      mobileMenu.classList.add('bg-transparent', 'bg-black/70', 'backdrop-blur-sm');
     }
+  })
+  
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
   });
