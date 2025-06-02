@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    <h1>INFOS/FORMULAIRE DE CONTACT</h1>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--   
+ __   __  _______  __   __    _______  __   __  ______    _______  _______  _______  ___   __    _  _______  __   __  ______    _______ 
+|  |_|  ||       ||  |_|  |  |       ||  | |  ||    _ |  |       ||       ||       ||   | |  |  | ||       ||  | |  ||    _ |  |       |
+|       ||  _____||       |  |    ___||  | |  ||   | ||  |   _   ||    _  ||    ___||   | |   |_| ||_     _||  | |  ||   | ||  |    ___|
+|       || |_____ |       |  |   |___ |  |_|  ||   |_||_ |  | |  ||   |_| ||   |___ |   | |       |  |   |  |  |_|  ||   |_||_ |   |___ 
+|       ||_____  ||       |  |    ___||       ||    __  ||  |_|  ||    ___||    ___||   | |  _    |  |   |  |       ||    __  ||    ___|
+| ||_|| | _____| || ||_|| |  |   |___ |       ||   |  | ||       ||   |    |   |___ |   | | | |   |  |   |  |       ||   |  | ||   |___ 
+|_|   |_||_______||_|   |_|  |_______||_______||___|  |_||_______||___|    |_______||___| |_|  |__|  |___|  |_______||___|  |_||_______|                                   
+                    
+        MSM Europeinture – Peinture industrielle & solutions techniques
+
+        -->
+
+        <title>Contact - MSM Europeinture</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../assets/images/iconemsm.ico" />
+      
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <style>
+          @font-face {
+            font-family: 'PoliceMSM';
+            src: url('../assets/fonts/junegull/junegull.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+          }
+        </style>
+        <!-- importation de tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  seriftext: ['DM Serif Text', 'serif'],
+                  outfit: ['Outfit', 'sans-serif'],
+                  spectral: ['Spectral', 'serif'],
+                  notosans: ['Noto Sans', 'serif'],
+                  audiowide: ['Audiowide', 'sans-serif'],
+                  junegull: ['PoliceMSM', 'sans-serif']
+                }
+              }
+            }
+          }
+        </script>
+      </head>
+
+<body class="bg-gray-50 font-notosans">
+
+  <!-- Menu -->
+  <div id="navbar" class="fixed top-0 left-0 w-full z-50 bg-[#D90429] shadow-xl shadow-black/15">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+      <a href="../index.html">
+        <img src="../assets/images/logomsm-removedbgv2.png" alt="Logo MSM" class="h-12 sm:h-[75px] object-contain">
+      </a>
+      <nav id="main-menu" class="hidden md:flex flex-row items-center gap-2 bg-transparent p-0">
+        <a href="about.html" class="nav-link text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Notre Entreprise</a>
+        <a href="sommairemetiers.html" class="nav-link text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nos Métiers</a>
+        <a href="joinus.html" class="nav-link text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Nous Rejoindre</a>
+        <a href="contact.html" class="nav-link text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col px-4 pb-4 pt-2 space-y-2 bg-[#D90429]">
+      <a href="about.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Notre Entreprise</a>
+      <a href="sommairemetiers.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nos Métiers</a>
+      <a href="joinus.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Nous Rejoindre</a>
+      <a href="contact.html" class="text-white px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-300 block text-center">Contact</a>
+    </div>
+  </div>
+
+  <!-- Contenu principal -->
+  <main class="pt-40 px-4 max-w-4xl mx-auto space-y-10">
+
+    <!-- Message d’introduction -->
+    <section class="text-center">
+      <h1 class="text-3xl sm:text-5xl lg:text-7xl font-junegull mb-4 text-[#D90429]">Contactez-nous</h1>
+      <p class="text-gray-700 text-lg">Vous souhaitez nous contacter ? Merci de remplir ce formulaire, nous vous recontacterons dans les plus brefs délais.</p>
+    </section>
+
+    <!-- Formulaire -->
+    <section class="bg-white p-6 rounded-xl shadow-md space-y-6">
+      <form class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="nom" class="block mb-1 font-semibold">Nom *</label>
+            <input type="text" id="nom" name="nom" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D90429]">
+          </div>
+          <div>
+            <label for="prenom" class="block mb-1 font-semibold">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D90429]">
+          </div>
+        </div>
+        <div>
+          <label for="email" class="block mb-1 font-semibold">Email *</label>
+          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D90429]">
+        </div>
+        <div>
+          <label for="message" class="block mb-1 font-semibold">Message *</label>
+          <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D90429]"></textarea>
+        </div>
+        <button type="submit" class="bg-[#D90429] text-white px-6 py-2 rounded-lg hover:bg-[#b8031f] transition duration-300">
+          Envoyer
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+    <footer class="bg-[#D90429] text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col items-center space-y-2 text-center font-notosans">
+      <address class="not-italic text-sm leading-6">
+        📍 Zone Artisanale du Plouich, 59590 Raismes<br>
+        📞 <a href="tel:+33327461616" class="hover:underline">03 27 46 16 16</a>
+      </address>
+      <a href="contact.html" class="text-sm underline hover:text-white/80 transition-colors duration-200">
+        ➤ Nous contacter
+      </a>
+      <p class="text-sm mt-2">© 2025 MSM Europeinture — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>

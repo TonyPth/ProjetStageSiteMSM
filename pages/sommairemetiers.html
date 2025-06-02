@@ -38,6 +38,8 @@
         }
       }
     </script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   </head>
 
   <body class="font-notosans text-[#2B2D42]">
@@ -76,7 +78,7 @@
 </div>
 
     <!-- Introduction -->
-    <section class="bg-[#EDF2F4] pt-40 pb-24 px-6 sm:px-12">
+    <section data-aos="fade-up" data-aos-duration="700" class="bg-[#EDF2F4] pt-40 pb-24 px-6 sm:px-12">
       <div class="max-w-4xl mx-auto text-center">
         <h3 class="text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 font-bold">Nos métiers</h3>
         <p class="text-lg">
@@ -87,137 +89,160 @@
       </div>
     </section>
 
-    <!-- Peinture industrielle -->
-    <section class="relative w-full h-[500px]">
-      <div class="absolute inset-0 flex flex-col lg:flex-row">
-        <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden flex items-center justify-center">
-          <img src="../assets/images/peinturemetier.webp" class="w-full h-full object-cover brightness-50" alt="Peinture industrielle">
-          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
-            <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Peinture industrielle</h2>     
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 space-y-16">
+    
+        <!-- Peinture liquide -->
+        <div data-aos="fade-up" data-aos-duration="700" class="grid md:grid-cols-2 items-center gap-8">
+          <!-- Image à gauche -->
+          <img src="../assets/images/peinturemetier.webp" alt="Peintre liquide" class="w-full rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+    
+          <!-- Texte à droite -->
+          <div>
+            <h2 class="text-4xl font-bold font-junegull text-[#D90429] mb-4">Peinture liquide</h2>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">L'activité de peinture industrielle chez <strong>MSM Europeinture</strong> englobe un ensemble de compétences spécialisées dans la préparation des surfaces et l'application de peintures liquides sur une grande diversité de matériaux — acier, aluminium, inox ou composites.
+              Que ce soit pour des pièces de petites dimensions ou des structures de grande taille, nous adaptons nos méthodes en fonction des exigences spécifiques de chaque secteur : ferroviaire, transport, industrie lourde...
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">Grâce à nos certifications ACQPA et aux homologations des plus grands constructeurs ferroviaires, nous garantissons des prestations conformes aux normes les plus strictes en matière d'anticorrosion.
+              Notre site est équipé de six cabines de peinture ainsi que d’une cabine dédiée au traitement de surface, permettant de traiter des pièces jusqu’à 20 mètres de long.
+            </p>
           </div>
-          <div class="absolute top-0 right-0 w-10 h-full bg-gray-100 clip-diagonal-left shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex-col items-center bg-gray-100 p-10 z-20 mb-10">
-          <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">L'activité de peinture industrielle chez MSM Europeinture englobe un ensemble de compétences spécialisées dans la préparation des surfaces et l'application de peintures liquides sur une grande diversité de matériaux — acier, aluminium, inox ou composites.
-            Que ce soit pour des pièces de petites dimensions ou des structures de grande taille, nous adaptons nos méthodes en fonction des exigences spécifiques de chaque secteur : ferroviaire, transport, industrie lourde...
-          </p>
-          <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">Grâce à nos certifications ACQPA et aux homologations des plus grands constructeurs ferroviaires, nous garantissons des prestations conformes aux normes les plus strictes en matière d'anticorrosion.
-            Notre site est équipé de six cabines de peinture ainsi que d’une cabine dédiée au traitement de surface, permettant de traiter des pièces jusqu’à 20 mètres de long.
-          </p>
-        </div>
-      </div>
-      <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white z-30"></div>
-    </section>
-
-    <!-- Prestations In Situ -->
-    <section class="relative w-full h-[500px]">
-      <div class="absolute inset-0 flex flex-col lg:flex-row-reverse">
-        <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/insitu.webp" class="w-full h-full object-cover brightness-50" alt="Prestations in situ">
-          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">
-            <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Prestations in situ</h2>     
+    
+        <!-- In Situ -->
+        <div data-aos="fade-up" data-aos-duration="700" class="grid md:grid-cols-2 items-center gap-8">
+          <!-- Texte à gauche -->
+          <div>
+            <h2 class="text-4xl font-bold font-junegull text-[#D90429] mb-4">Prestations In Situ</h2>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Ce service sur mesure permet d'intégrer nos opérateurs qualifiés au sein même de vos unités de production, pour des missions ponctuelles ou des renforts de capacité.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Chaque équipe est encadrée par un manager dédié, garantissant la qualité de service et le respect de vos processus internes. Notre approche flexible vous offre un contrôle total sur :
+            </p>
+            <ul class="list-disc list-inside text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed mt-2 ml-6">
+              <li>Les délais</li>
+              <li>Les volumes</li>
+              <li>L'organisation du travail</li>
+            </ul>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Ce mode d’intervention peut compléter une sous-traitance classique ou pallier un pic de production temporaire, tout en conservant un haut niveau d’exigence et de fiabilité.
+            </p>
           </div>
-          <div class="absolute top-0 left-0 w-10 h-full bg-gray-100 clip-diagonal-right shadow-xl z-10"></div>
+    
+          <!-- Image à droite -->
+          <img src="../assets/images/insitu.webp" alt="Façadier" class="w-full rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
-          <p class="text-lg">Afin de répondre à des besoins de flexibilité croissants, nous proposons des prestations in situ, directement sur le site de nos clients.
 
-            Ce service sur mesure permet d’intégrer nos opérateurs qualifiés au sein même de vos unités de production, pour des missions ponctuelles ou des renforts de capacité.
-            
-            Chaque équipe est encadrée par un manager dédié, garantissant la qualité de service et le respect de vos processus internes. Notre approche flexible vous offre un contrôle total sur les délais, les volumes et l’organisation du travail.
-            
-            Ce mode d’intervention peut compléter une sous-traitance classique ou pallier un pic de production temporaire, tout en conservant un haut niveau d’exigence et de fiabilité.</p>
-        </div>
-      </div>
-      <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white z-30"></div>
-    </section>
-
-    <!-- Pelliculage -->
-    <section class="relative w-full h-[500px]">
-      <div class="absolute inset-0 flex flex-col lg:flex-row">
-        <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/pelliculage.webp" class="w-full h-full object-cover brightness-50" alt="Pellicullage">
-          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
-            <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Pelliculage</h2>     
+        <!-- Pelliculage -->
+        <div data-aos="fade-up" data-aos-duration="700"class="grid md:grid-cols-2 items-center gap-8">
+          <!-- Image à gauche -->
+          <img src="../assets/images/pelliculage.webp" alt="Pelliculage" class="w-full rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+    
+          <!-- Texte à droite -->
+          <div>
+            <h2 class="text-4xl font-bold font-junegull text-[#D90429] mb-4">Pelliculage</h2>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">
+              Depuis 2020, nous avons intégré le <strong>pelliculage adhésif</strong> à nos savoir-faire, en partenariat avec <strong>3M</strong>.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Nos équipes interviennent aussi bien en atelier que sur site pour appliquer différents types de films techniques, répondant à vos besoins :
+            </p>
+            <ul class="list-disc list-inside text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed mt-2 ml-6">
+              <li><strong>Esthétiques</strong></li>
+              <li><strong>Fonctionnels</strong></li>
+              <li><strong>De protection</strong></li>
+            </ul>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed mt-4 ml-6">
+              Exemples de films utilisés :
+            </p>
+            <ul class="list-disc list-inside text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed ml-6">
+              <li>Films anti-graffitis pour une meilleure durabilité en milieu urbain ou industriel</li>
+              <li>Films anti-rayures pour les zones sensibles à l’usure</li>
+              <li>Films graphiques 2D / 3D pour une personnalisation avec finition professionnelle</li>
+            </ul>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Cette expertise complète notre offre de valorisation et de protection des surfaces.
+            </p>
           </div>
-          <div class="absolute top-0 right-0 w-10 h-full bg-gray-100 clip-diagonal-left shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
-          <p class="text-lg">Depuis 2020, nous avons intégré le pelliculage adhésif à nos savoir-faire, en partenariat avec 3M.
-
-            Nos équipes interviennent aussi bien en atelier que sur site pour appliquer différents types de films techniques, répondant à vos besoins esthétiques, fonctionnels ou de protection :
-            
-                Films anti-graffitis pour une meilleure durabilité en milieu urbain ou industriel
-            
-                Films anti-rayures pour les zones sensibles à l’usure
-            
-                Films graphiques 2D / 3D pour personnaliser vos surfaces avec une finition professionnelle
-            
-            Cette expertise complète notre offre de valorisation et de protection des surfaces.</p>
-        </div>
-      </div>
-      <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white z-30"></div>
-    </section>
-
-    <!-- Chaudronnerie mécanique -->
-    <section class="relative w-full h-[500px]">
-      <div class="absolute inset-0 flex flex-col lg:flex-row-reverse">
-        <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/chaudronneriemecanique.jpg" class="w-full h-full object-cover brightness-50" alt="Chaudronnerie mécanique">
-          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
-            <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Chaudronnerie mécanique</h2>     
+    
+        <!-- Chaudronnerie mécanique -->
+        <div data-aos="fade-up" data-aos-duration="700"class="grid md:grid-cols-2 items-center gap-8">
+          <!-- Texte à gauche -->
+          <div>
+            <h2 class="text-4xl font-bold font-junegull text-[#D90429] mb-4">Chaudronnerie mécanique</h2>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">
+              Grâce à notre atelier de mécano-soudure et à notre bureau d’étude interne, nous concevons et fabriquons des <strong>outillages sur mesure</strong> destinés au transport, à la manutention et au conditionnement de pièces peintes.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Notre savoir-faire couvre notamment :
+            </p>
+            <ul class="list-disc list-inside text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed ml-6">
+              <li>Les praticables de transport</li>
+              <li>Les structures spécifiques adaptées à vos contraintes logistiques</li>
+            </ul>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Ce service intégré permet de gagner en efficacité sur la chaîne de production, tout en assurant la sécurité et l’intégrité des pièces traitées.
+            </p>
           </div>
-          <div class="absolute top-0 left-0 w-10 h-full bg-gray-100 clip-diagonal-right shadow-xl z-10"></div>
+    
+          <!-- Image à droite -->
+          <img src="../assets/images/chaudronneriemecanique.jpg" alt="Façadier" class="w-full rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
-          <p class="text-lg">Grâce à notre atelier de mécano-soudure et à notre bureau d’étude interne, nous concevons et fabriquons des outillages sur mesure destinés au transport, à la manutention et au conditionnement de pièces peintes.
 
-            Notre savoir-faire couvre aussi bien les praticables de transport que les structures spécifiques adaptées à vos contraintes logistiques.
-            
-            Ce service intégré permet de gagner en efficacité sur la chaîne de production tout en assurant la sécurité et l’intégrité des pièces traitées.</p>
-        </div>
-      </div>
-      <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white z-30"></div>
-    </section>
-
-    <!-- Traitement de surface -->
-    <section class="relative w-full h-[500px]">
-      <div class="absolute inset-0 flex flex-col lg:flex-row">
-        <div class="relative w-full lg:w-[50%] h-1/2 lg:h-full overflow-hidden">
-          <img src="../assets/images/traitementsurface.jpg" class="w-full h-full object-cover brightness-50" alt="Traitement de surface">
-          <div class="absolute inset-0 flex items-center justify-center p-8 mb-20">       
-            <h2 class="text-white text-3xl lg:text-4xl font-junegull text-center drop-shadow-lg">Traitement de surface</h2>     
+        <!-- Traitement de surface -->
+        <div data-aos="fade-up" data-aos-duration="700"class="grid md:grid-cols-2 items-center gap-8">
+          <!-- Image à gauche -->
+          <img src="../assets/images/traitementsurface.jpg" alt="Traitement de surface" class="w-full rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+    
+          <!-- Texte à droite -->
+          <div>
+            <h2 class="text-4xl font-bold font-junegull text-[#D90429] mb-4">Traitement de surface</h2>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-6">
+              <strong>MSM Europeinture</strong> maîtrise plusieurs techniques avancées de <strong>traitement de surface</strong>, en conformité avec les exigences de finition et de rugosité propres à chaque client.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Nos installations permettent d’intervenir sur des pièces allant jusqu’à <strong>20 mètres de long</strong>, <strong>5 mètres de large</strong> et <strong>5 mètres de haut</strong>.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Nos procédés incluent :
+            </p>
+            <ul class="list-disc list-inside text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed ml-6">
+              <li><strong>Grenaillage</strong> : amélioration de l’adhérence et résistance mécanique</li>
+              <li><strong>Sablage</strong> : élimination des impuretés et préparation des surfaces</li>
+              <li><strong>Corindonnage</strong> : obtention d’une rugosité contrôlée sur surfaces complexes</li>
+            </ul>
+            <p class="text-sm sm:text-base md:text-lg text-gray-700 font-notosans leading-relaxed indent-8 mt-4">
+              Ces traitements garantissent une base optimale avant peinture ou pelliculage, prolongeant la durée de vie des matériaux.
+            </p>
           </div>
-          <div class="absolute top-0 right-0 w-10 h-full bg-gray-100 clip-diagonal-left shadow-xl z-10"></div>
         </div>
-        <div class="w-full lg:w-[50%] flex items-center bg-gray-100 p-10 z-20 mb-10">
-          <p class="text-lg">MSM Europeinture maîtrise plusieurs techniques avancées de traitement de surface, en conformité avec les exigences de finition et de rugosité propres à chaque client.
-
-            Nos installations permettent d’intervenir sur des pièces allant jusqu’à 20 mètres de long, 5 mètres de large et 5 mètres de haut.
-            
-            Nos procédés incluent :
-            
-                Grenaillage : pour améliorer l’adhérence et la résistance mécanique
-            
-                Sablage : pour éliminer les impuretés et préparer les surfaces
-            
-                Corindonnage : pour obtenir une rugosité contrôlée sur les surfaces complexes
-            
-            Ces traitements garantissent une base optimale avant peinture ou pelliculage, prolongeant la durée de vie des matériaux.</p>
-        </div>
+    
       </div>
-      <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white z-30"></div>
     </section>
 
     
 
     <!-- Footer -->
-      <footer class="bg-[#D90429] text-white py-3">
-      <div class="max-w-6xl mx-auto text-center">
-        <p class="text-sm">© 2025 MSM Europeinture Tous droits réservés.</p>
-      </div>
-    </footer>
+<footer class="bg-[#D90429] text-white py-6">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col items-center space-y-2 text-center font-notosans">
+    <address class="not-italic text-sm leading-6">
+      📍 Zone Artisanale du Plouich, 59590 Raismes<br>
+      📞 <a href="tel:+33327461616" class="hover:underline">03 27 46 16 16</a>
+    </address>
+    <a href="contact.html" class="text-sm underline hover:text-white/80 transition-colors duration-200">
+      ➤ Nous contacter
+    </a>
+    <p class="text-sm mt-2">© 2025 MSM Europeinture — Tous droits réservés.</p>
+  </div>
+</footer>
 
     <script src="../script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

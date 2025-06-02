@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
     const track = document.getElementById("carousel-track");
     const images = Array.from(track.children);
-    let scrollSpeed = 0.7; // pixels par frame (en gros 30px sur 60 fps)
+    let scrollSpeed = 0.7; // pixels par frame (en gros 40px environ sur 60 fps)
     let position = 0;
     let isPaused = false;
   
@@ -97,14 +97,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (window.scrollY > heroSectionHeight / 1.5) {
       navbar.classList.remove('bg-transparent');
-      mobileMenu.classList.remove('bg-transparent', 'bg-black/70', 'backdrop-blur-sm');
+      mobileMenu.classList.remove('bg-transparent', 'backdrop-blur-sm');
       navbar.classList.add('bg-[#D90429]', 'shadow-xl', 'shadow-black/15');
       mobileMenu.classList.add('bg-[#D90429]');
     } else {
       navbar.classList.remove('bg-[#D90429]', 'shadow-xl', 'shadow-black/15');
       mobileMenu.classList.remove('bg-[#D90429]');
       navbar.classList.add('bg-transparent');
-      mobileMenu.classList.add('bg-transparent', 'bg-black/70', 'backdrop-blur-sm');
+      mobileMenu.classList.add('bg-transparent', 'backdrop-blur-sm');
     }
   })
   
