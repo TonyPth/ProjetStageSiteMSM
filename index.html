@@ -54,7 +54,7 @@
   
   <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent z-10"></div>
   <!-- film sombre -->
-  <div class="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
 
  <!-- menu -->
  <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-500 bg-transparent">
@@ -92,11 +92,7 @@
 
   <!-- contenu central fixe -->
 <div data-aos="fade-up" data-aos-duration="700" class="fixed inset-0 flex flex-col items-center justify-center text-center z-20 px-4">
-  <img src="assets/images/logomsm-removedbgv2.png" alt="Logo MSM"
-       class="w-144 sm:w-144 md:w-160 lg:w-192 xl:w-208 mb-4" />
-  <p class="text-xs sm:text-sm md:text-base lg:text-lg font-notosans max-w-md sm:max-w-xl text-white">
-    Valoriser et protéger vos supports grâce à notre savoir-faire en peinture industrielle.
-  </p>
+  <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-junegull text-white mb-4">MSM EUROPEINTURE</h1>
 </div>
 
   <!-- bandeau bas "en savoir plus" -->
@@ -113,11 +109,11 @@
 <!-- contenu qui défile par dessus -->
 <div class="relative z-30 bg-white">
   <!-- BIENVENUE -->
-  <section data-aos="fade-up" data-aos-duration="700" class="bg-[#EDF2F4] py-20 z-20">
+  <section class="bg-[#EDF2F4] py-20 z-20">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       
       <!-- (gauche) texte -->
-      <div>
+      <div data-aos="fade-up" data-aos-duration="700">
         <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Bienvenue</h3>
         <p class="text-sm sm:text-base md:text-lg text-[#2B2D42] font-notosans leading-relaxed indent-8 mt-6">
             Depuis plus de 25 ans, <strong>MSM Europeinture</strong> est un acteur reconnu dans la filière ferroviaire. Spécialisés dans l'application de peinture liquide sur tous types de supports (acier, aluminium, inox, composites) et le traitement de surfaces, nous mettons notre expertise au service de la performance et de la durabilité.
@@ -128,7 +124,7 @@
       </div>
   
       <!-- (droite) vidéo -->
-      <div class="aspect-w-16 aspect-h-9">
+      <div data-aos="fade-up" data-aos-duration="700" class="aspect-w-16 aspect-h-9">
         <video 
           id="video-presentation"
           class="w-full h-full rounded-xl shadow-lg video-cover"
@@ -146,11 +142,11 @@
   </section>
 
   <!-- SECTEURS D'ACTIVITE -->
-  <section data-aos="fade-up" data-aos-duration="700"class="bg-gray-100 py-20 z-20">
+  <section class="bg-gray-100 py-20 z-20">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       
       <!-- (gauche) secteurs d'activité -->
-      <div>
+      <div data-aos="fade-up" data-aos-duration="700">
         <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nos secteurs d'activité</h3>
         <ul class="text-2xl font-junegull text-[#D90429] mb-2 ml-4 list-disc">
           <li>Ferroviaire</li>
@@ -164,7 +160,7 @@
       </div>
   
       <!-- (droite) description -->
-      <div>
+      <div data-aos="fade-up" data-aos-duration="700">
         <p class="text-sm sm:text-base md:text-lg text-[#2B2D42] font-notosans leading-relaxed indent-8 mt-6">
           Depuis sa création, <strong>MSM Europeinture</strong> s'engage à faire évoluer son métier avec modernité et exigence. Grâce à une écoute attentive et des prestations compétitives, nous concevons des solutions industrielles fiables, innovantes et durables.
         </p>
@@ -176,9 +172,59 @@
     </div>
   </section>
 
+  <!-- METIERS -->
+  <section class="bg-[#EDF2F4] py-20 z-20">
+    
+    <div class="max-w-6xl mx-auto px-4">
+      
+      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nos Métiers</h3>
+      
+      <!-- cartes métiers -->
+      <div class="flex flex-wrap justify-center gap-8">
+
+        <div data-aos="fade-up" data-aos-duration="700" class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">            
+          <img src="assets/images/peinturemetier.webp" alt="Photo Illustration Peinture" class="h-40 w-full object-cover mb-4">
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Peinture industrielle</h4>
+          <p class="text-[#2B2D42] font-notosans mb-4">Application de peinture liquide sur tous types de surface avec exigence qualité et environnementale.</p>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+        </div>
+  
+        <div data-aos="fade-up" data-aos-duration="700" class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+          <img src="assets/images/insitu.webp" alt="Photo Illustration In Situ" class="h-40 w-full object-cover mb-4">
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Prestations in situ</h4>
+          <p class="text-[#2B2D42] font-notosans mb-4">Mise à disposition d'équipes qualifiées sur site pour des prestations flexibles, planifiées selon vos besoins et vos process.</p>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+        </div>
+  
+        <div data-aos="fade-up" data-aos-duration="700" class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+          <img src="assets/images/pelliculage.webp" alt="Photo Illustration Pelliculage" class="h-40 w-full object-cover mb-4">
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Pelliculage</h4>
+          <p class="text-[#2B2D42] font-notosans mb-4">Pose de films adhésifs (anti-graffitis, anti-rayures, graphiques 2D/3D) en atelier ou sur site, en partenariat avec 3M.</p>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+        </div>
+  
+        <div data-aos="fade-up" data-aos-duration="700" class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+          <img src="assets/images/chaudronneriemecanique.jpg" alt="Photo Illustration Chaudronnerie Mécanique" class="h-40 w-full object-cover mb-4">
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Chaudronnerie mécanique</h4>
+          <p class="text-[#2B2D42] font-notosans mb-4">Conception et fabrication d'outillages de transport et de manutention sur mesure grâce à notre atelier de mécano-soudure et notre bureau d'étude.</p>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+        </div>
+  
+        <div data-aos="fade-up" data-aos-duration="700" class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
+          <img src="assets/images/traitementsurface.jpg" alt="Photo Illustration Traitement Surface" class="h-40 w-full object-cover mb-4">
+          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Traitement de surface</h4>
+          <p class="text-[#2B2D42] font-notosans mb-4">Maîtrise du sablage, grenaillage et corindonnage pour tous types de pièces, jusqu'à 20 x 5 x 5 m, dans le respect strict de vos exigences de rugosité et de finition.</p>
+          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- GALERIE CAROUSSEL -->
-  <!-- TODO: possibilité de scroll les images de gauche à droite -->
-  <section data-aos="fade-up" data-aos-duration="700" class="relative bg-[#D90429] overflow-hidden py-0">
+  <!-- TODO: refaire tout le carroussel, pas satisfait de celui-ci -->
+  <section class="relative bg-[#D90429] overflow-hidden py-0">
     <div class="carousel-container">
       <div class="carousel-track" id="carousel-track">
         <img src="assets/images/secact1.webp" alt="img1">
@@ -201,78 +247,8 @@
     <span onclick="closeImage()" class="absolute top-4 right-4 text-white text-3xl cursor-pointer">&times;</span>
   </div>
 
-  <!-- METIERS -->
-  <section data-aos="fade-up" data-aos-duration="700"class="bg-[#EDF2F4] py-20 z-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nos Métiers</h3>
-      
-      <!-- cartes métiers -->
-      <div class="flex flex-wrap justify-center gap-8">
-
-        <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">            
-          <img src="assets/images/peinturemetier.webp" alt="Photo Illustration Peinture" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Peinture industrielle</h4>
-          <p class="text-[#2B2D42] font-notosans mb-4">Application de peinture liquide sur tous types de surface avec exigence qualité et environnementale.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
-        </div>
-  
-        <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
-          <img src="assets/images/insitu.webp" alt="Photo Illustration In Situ" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Prestations in situ</h4>
-          <p class="text-[#2B2D42] font-notosans mb-4">Mise à disposition d'équipes qualifiées sur site pour des prestations flexibles, planifiées selon vos besoins et vos process.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
-        </div>
-  
-        <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
-          <img src="assets/images/pelliculage.webp" alt="Photo Illustration Pelliculage" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Pelliculage</h4>
-          <p class="text-[#2B2D42] font-notosans mb-4">Pose de films adhésifs (anti-graffitis, anti-rayures, graphiques 2D/3D) en atelier ou sur site, en partenariat avec 3M.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
-        </div>
-  
-        <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
-          <img src="assets/images/chaudronneriemecanique.jpg" alt="Photo Illustration Chaudronnerie Mécanique" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Chaudronnerie mécanique</h4>
-          <p class="text-[#2B2D42] font-notosans mb-4">Conception et fabrication d'outillages de transport et de manutention sur mesure grâce à notre atelier de mécano-soudure et notre bureau d'étude.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
-        </div>
-  
-        <div class="bg-gray-100 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full sm:w-[48%] lg:w-[30%]">
-          <img src="assets/images/traitementsurface.jpg" alt="Photo Illustration Traitement Surface" class="h-40 w-full object-cover mb-4">
-          <h4 class="text-2xl font-junegull text-[#D90429] mb-2">Traitement de surface</h4>
-          <p class="text-[#2B2D42] font-notosans mb-4">Maîtrise du sablage, grenaillage et corindonnage pour tous types de pièces, jusqu'à 20 x 5 x 5 m, dans le respect strict de vos exigences de rugosité et de finition.</p>
-          <a href="pages/sommairemetiers.html" class="mt-auto inline-block bg-[#D90429] text-white px-4 py-2 rounded-full font-notosans text-sm hover:bg-red-700 transition">Plus d'informations +</a>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-
-  <!-- RECRUTEMENT -->
-  <section data-aos="fade-up" data-aos-duration="700"class="bg-gray-100 py-12 px-6 sm:px-12">
-    <div class="max-w-5xl mx-auto text-center mb-10">
-      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nous recrutons !</h3>
-      <p class="text-[#2B2D42] text-base sm:text-lg"><strong>MSM Europeinture</strong> recrute régulièrement pour accompagner sa croissance. Vous aimez travailler en équipe et relever de nouveaux défis ? Rejoignez une entreprise à taille humaine avec de vraies valeurs humaines et professionnelles.</p>
-    </div>
-
-    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-6">
-      <h3 class="text-xl sm:text-2xl font-semibold text-[#D90429]">Nous recherchons actuellement :</h3>
-      <ul class="text-[#2B2D42] list-disc list-inside space-y-3 text-left text-base sm:text-lg">
-        <li><strong>Technico-commerciaux</strong> expérimentés en traitement de surfaces</li>
-        <li><strong>Peintres industriels</strong> débutants ou confirmés – <span class="text-red-600 font-bold">URGENT</span></li>
-        <li><strong>Enduiseurs / préparateurs</strong> débutants ou expérimentés</li>
-        <li><strong>Sableurs / grenailleurs</strong></li>
-        <li><strong>Manutentionnaires</strong></li>
-      </ul>
-
-      <div class="mt-6 text-center">
-        <a href="pages/contact.html" class="mt-auto inline-block bg-[#D90429] text-white px-8 py-5 rounded-full font-notosans text-base hover:bg-red-700 transition">CONTACTEZ-NOUS !</a>
-      </div>
-    </div>
-  </section>
-
   <!-- EQUIPEMENTS -->
-  <section data-aos="fade-up" data-aos-duration="700"class="bg-[#EDF2F4] py-20 z-20">
+  <section class="bg-[#EDF2F4] py-20 z-20">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
       
       <!-- ? TODO: remplacer par liste d'équipements à gauche et galerie photos à droite -->
@@ -292,7 +268,7 @@
       </div>
 
       <!-- (droite) liste des équipements -->
-      <div class="bg-gray-100 p-6 rounded-2xl shadow-lg self-center w-full">
+      <div data-aos="fade-up" data-aos-duration="700" class="bg-gray-100 p-6 rounded-2xl shadow-lg self-center w-full">
         <ul class="list-disc list-inside text-[#2B2D42] text-sm sm:text-base font-notosans space-y-3">
           <li><strong>Site industriel</strong> : 8000 m² (dont 6000 m² bâtis)</li>
           <li><strong>4 cabines de peinture</strong> :
@@ -314,6 +290,29 @@
             </ul>
           </li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECRUTEMENT -->
+  <section class="bg-gray-100 py-12 px-6 sm:px-12">
+    <div class="max-w-5xl mx-auto text-center mb-10">
+      <h3 class="text-3xl sm:text-5xl lg:text-7xl font-junegull text-[#D90429] mb-12 text-center font-bold">Nous recrutons !</h3>
+      <p class="text-[#2B2D42] text-base sm:text-lg"><strong>MSM Europeinture</strong> recrute régulièrement pour accompagner sa croissance. Vous aimez travailler en équipe et relever de nouveaux défis ? Rejoignez une entreprise à taille humaine avec de vraies valeurs humaines et professionnelles.</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="700" class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 space-y-6">
+      <h3 class="text-xl sm:text-2xl font-semibold text-[#D90429]">Nous recherchons actuellement :</h3>
+      <ul class="text-[#2B2D42] list-disc list-inside space-y-3 text-left text-base sm:text-lg">
+        <li><strong>Technico-commerciaux</strong> expérimentés en traitement de surfaces</li>
+        <li><strong>Peintres industriels</strong> débutants ou confirmés – <span class="text-red-600 font-bold">URGENT</span></li>
+        <li><strong>Enduiseurs / préparateurs</strong> débutants ou expérimentés</li>
+        <li><strong>Sableurs / grenailleurs</strong></li>
+        <li><strong>Manutentionnaires</strong></li>
+      </ul>
+
+      <div class="mt-6 text-center">
+        <a href="pages/contact.html" class="mt-auto inline-block bg-[#D90429] text-white px-8 py-5 rounded-full font-notosans text-base hover:bg-red-700 transition">CONTACTEZ-NOUS !</a>
       </div>
     </div>
   </section>
