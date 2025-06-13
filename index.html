@@ -52,7 +52,7 @@
 <!-- HERO SECTION -->
 <section class="relative h-screen bg-fixed bg-center bg-cover text-white" style="background-image: url('assets/images/recherche1.webp');">
   
-  <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent z-10"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent z-10"></div>
   <!-- film sombre -->
   <div class="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
 
@@ -92,7 +92,7 @@
 
   <!-- contenu central fixe -->
 <div data-aos="fade-up" data-aos-duration="700" class="fixed inset-0 flex flex-col items-center justify-center text-center z-20 px-4">
-  <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-junegull text-white mb-4">MSM EUROPEINTURE</h1>
+  <h1 class="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-junegull text-white mb-4">MSM EUROPEINTURE</h1>
 </div>
 
   <!-- bandeau bas "en savoir plus" -->
@@ -168,6 +168,25 @@
     </div>
   </section>
 
+  <!-- GALERIE CAROUSSEL -->
+  <!-- TODO: refaire tout le carroussel, pas satisfait de celui-ci -->
+  <section class="relative bg-[#D90429] overflow-hidden py-0">
+    <div class="carousel-container">
+      <div class="carousel-track" id="carousel-track">
+        <img src="assets/images/secact1.webp" alt="img1">
+        <img src="assets/images/secact2.webp" alt="img2">
+        <img src="assets/images/secact3.webp" alt="img3">
+        <img src="assets/images/secact4.webp" alt="img4">
+        <img src="assets/images/secact5.webp" alt="img5">
+        <img src="assets/images/secact7.webp" alt="img6">
+        <img src="assets/images/secact8.webp" alt="img7">
+        <img src="assets/images/about1.jpg" alt="img8">
+        <img src="assets/images/about2.jpg" alt="img9">
+        <img src="assets/images/about3.jpg" alt="img10">
+      </div>
+    </div>
+  </section>
+
   <!-- METIERS -->
   <section class="bg-[#EDF2F4] py-20 z-20">
     
@@ -217,31 +236,6 @@
 
     </div>
   </section>
-
-  <!-- GALERIE CAROUSSEL -->
-  <!-- TODO: refaire tout le carroussel, pas satisfait de celui-ci -->
-  <section class="relative bg-[#D90429] overflow-hidden py-0">
-    <div class="carousel-container">
-      <div class="carousel-track" id="carousel-track">
-        <img src="assets/images/secact1.webp" alt="img1">
-        <img src="assets/images/secact2.webp" alt="img2">
-        <img src="assets/images/secact3.webp" alt="img3">
-        <img src="assets/images/secact4.webp" alt="img4">
-        <img src="assets/images/secact5.webp" alt="img5">
-        <img src="assets/images/secact7.webp" alt="img6">
-        <img src="assets/images/secact8.webp" alt="img7">
-        <img src="assets/images/about1.jpg" alt="img8">
-        <img src="assets/images/about2.jpg" alt="img9">
-        <img src="assets/images/about3.jpg" alt="img10">
-      </div>
-    </div>
-  </section>
-
-  <!-- LIGHTBOX (affichage en grand d'une image) -->
-  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
-    <img id="lightbox-img" class="max-w-full max-h-full rounded shadow-lg" alt="Image agrandie" />
-    <span onclick="closeImage()" class="absolute top-4 right-4 text-white text-3xl cursor-pointer">&times;</span>
-  </div>
 
   <!-- EQUIPEMENTS -->
   <section class="bg-[#EDF2F4] py-20 z-20">

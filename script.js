@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.scrollY > heroSectionHeight / 1.5) {
       navbar.classList.remove('bg-transparent');
       mobileMenu.classList.remove('bg-transparent', 'backdrop-blur-sm');
-      navbar.classList.add('bg-[#D90429]', 'shadow-xl', 'shadow-black/15');
+      navbar.classList.add('bg-[#D90429]', 'shadow-xl', 'shadow-black/30');
       mobileMenu.classList.add('bg-[#D90429]');
     } else {
       navbar.classList.remove('bg-[#D90429]', 'shadow-xl', 'shadow-black/15');
