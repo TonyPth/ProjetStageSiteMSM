@@ -97,7 +97,7 @@
 
     <!-- Formulaire pour Neflify -->
     <section class="bg-white p-6 rounded-xl shadow-md space-y-6">
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
+      <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
         <input type="hidden" name="form-name" value="contact">
         <p class="hidden">
           <label>Ne pas remplir ce champ : <input name="bot-field"></label>
@@ -146,49 +146,13 @@
     </div>
   </footer>
 
-  <!-- Script -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    const form = document.getElementById('contact-form');
-  const successMessage = document.getElementById('success-message');
-  const closeBtn = document.getElementById('close-msg');
-
-  form.addEventListener('submit', function(event) {
-    // Empêche le rechargement de la page
-    event.preventDefault();
-
-    // Prépare les données du formulaire
-    const formData = new FormData(form);
-
-    // Envoie via fetch vers Netlify Forms
-    fetch('/', {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(() => {
-      // Affiche le message de succès
-      successMessage.style.display = 'block';
-      form.reset();
-    })
-    .catch((error) => alert('Erreur lors de l’envoi, veuillez réessayer.'));
-  });
-
-  closeBtn.addEventListener('click', () => {
-    successMessage.style.display = 'none';
-  });
-  </script>
-
+  <!-- Scripts -->
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <script src="../script.js"></script>
 
 </body>
 </html>
