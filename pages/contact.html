@@ -89,7 +89,7 @@
   <!-- Contenu principal -->
   <main data-aos="fade-up" data-aos-duration="700"class="pt-40 px-4 max-w-4xl mx-auto space-y-10">
 
-    <!-- Message d’introduction -->
+    <!-- Message d'introduction -->
     <section class="text-center">
       <h1 class="text-3xl sm:text-5xl lg:text-7xl font-junegull mb-4 text-[#D90429]">Contactez-nous</h1>
       <p class="text-gray-700 text-lg">Vous souhaitez nous contacter ? Merci de remplir ce formulaire, nous vous recontacterons dans les plus brefs délais.</p>
@@ -97,7 +97,12 @@
 
     <!-- Formulaire -->
     <section class="bg-white p-6 rounded-xl shadow-md space-y-6">
-      <form class="space-y-4">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/pages/contact.html" class="space-y-4">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="to" value="tony.ponthieu@outlook.com">
+        <p class="hidden">
+          <label>Ne pas remplir ce champ : <input name="bot-field"></label>
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label for="nom" class="block mb-1 font-semibold">Nom *</label>
@@ -124,10 +129,10 @@
   </main>
 
   <!-- Footer -->
-    <footer class="bg-[#D90429] text-white py-6 mt-12">
+  <footer class="bg-[#D90429] text-white py-6 mt-12">
     <div class="max-w-6xl mx-auto px-4 flex flex-col items-center space-y-2 text-center font-notosans">
       <address class="not-italic text-sm leading-6">
-        📍 Zone Artisanale du Plouich, 59590 Raismes<br>
+        📍 ZAC du Plouich, 59590 Raismes<br>
         📞 <a href="tel:+33327461616" class="hover:underline">03 27 46 16 16</a>
       </address>
       <a href="contact.html" class="text-sm underline hover:text-white/80 transition-colors duration-200">
