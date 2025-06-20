@@ -74,6 +74,32 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbarHeight = navbar.offsetHeight;
     mainContent.style.paddingTop = `${navbarHeight + 60}px`;
   }
+
+  // MESSAGE FORMULAIRE
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('success-message');
+  const closeBtn = document.getElementById('close-msg');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      successMessage.style.display = 'block';
+      form.reset();
+    })
+    .catch(() => alert('Erreur lors de l’envoi, veuillez réessayer.'));
+  });
+
+  closeBtn.addEventListener('click', () => {
+    successMessage.style.display = 'none';
+  });
 });
   
   function openImage(src) {
